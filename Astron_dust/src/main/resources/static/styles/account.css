@@ -1,0 +1,427 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 144rem;
+}.account-e7P {
+  box-sizing: border-box;
+  padding: 5rem 4.25rem 4.1rem 9.1rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/mypage_background.png');
+  background-color: #ffffff;
+}
+.account-e7P .auto-group-3rj7-949 {
+  margin: 0rem 0rem 2.4rem 0.6rem;
+  width: calc(100% - 0.6rem);
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.account-e7P .auto-group-3rj7-949 .name-39X {
+  margin: 3.3rem 77.55rem 0rem 0rem;
+  display: flex;
+  font-size: 10rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-e7P .auto-group-3rj7-949 .delete-account-uxR {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration-line: underline;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o {
+  margin-right: 3.75rem;
+  box-sizing: border-box;
+  padding: 3.8rem 5.7rem 0rem 3.2rem;
+  width: 126.9rem;
+  height: 77.6rem;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(217, 217, 217, 0.3199999928);
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q {
+  width: 100%;
+  height: 90.4rem;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content1-eYd {
+  margin-bottom: 3.2rem;
+  box-sizing: border-box;
+  padding: 3.1rem 2.6rem 3rem 3.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 254, 242, 0.7599999905);
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content1-eYd .item-1-y57 {
+  margin: 0rem 30.15rem 0.2rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content1-eYd .hello-everyone-eh3 {
+  margin: 0.2rem 32.15rem 0rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content1-eYd .witingdate-Vhf {
+  margin-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content2-5Qy {
+  margin-bottom: 3.2rem;
+  box-sizing: border-box;
+  padding: 3.1rem 2.6rem 3rem 3.1rem;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 254, 242, 0.7599999905);
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content2-5Qy .item-2-AhK {
+  margin: 0rem 30.15rem 0.2rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content2-5Qy .hello-everyone-4Xo {
+  margin: 0.2rem 32.15rem 0rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content2-5Qy .witingdate-9JM {
+  margin-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content3-D3K {
+  margin-bottom: 3.2rem;
+  box-sizing: border-box;
+  padding: 3.1rem 2.6rem 3rem 3.1rem;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 254, 242, 0.7599999905);
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content3-D3K .item-3-XJu {
+  margin: 0rem 30.15rem 0.2rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content3-D3K .hello-everyone-1Uy {
+  margin: 0.2rem 32.15rem 0rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content3-D3K .witingdate-7H7 {
+  margin-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content4-cDs {
+  margin-bottom: 3.2rem;
+  box-sizing: border-box;
+  padding: 3.1rem 2.6rem 3rem 3.1rem;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 254, 242, 0.7599999905);
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content4-cDs .item-4-Y7X {
+  margin: 0rem 30.15rem 0.2rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content4-cDs .hello-everyone-FXj {
+  margin: 0.2rem 32.15rem 0rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content4-cDs .witingdate-N6Z {
+  margin-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content5-frM {
+  margin-bottom: 3.3rem;
+  box-sizing: border-box;
+  padding: 3.1rem 2.6rem 3rem 3.1rem;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 254, 242, 0.7599999905);
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content5-frM .item-5-C5b {
+  margin: 0rem 30.15rem 0.2rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content5-frM .hello-everyone-KAD {
+  margin: 0.2rem 32.15rem 0rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content5-frM .witingdate-2aR {
+  margin-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content6-XGH {
+  margin-bottom: 2.2rem;
+  box-sizing: border-box;
+  padding: 3.1rem 2.6rem 3rem 3.1rem;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 254, 242, 0.7599999905);
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content6-XGH .item-6-FCH {
+  margin: 0rem 30.15rem 0.2rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content6-XGH .hello-everyone-Zim {
+  margin: 0.2rem 32.15rem 0rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content6-XGH .witingdate-HPs {
+  margin-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content7-BVF {
+  margin-right: 0.1rem;
+  box-sizing: border-box;
+  padding: 3.1rem 2.6rem 3rem 3.1rem;
+  height: 10.3rem;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 254, 242, 0.7599999905);
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content7-BVF .item-6-WGd {
+  margin: 0rem 30.15rem 0.2rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content7-BVF .hello-everyone-po7 {
+  margin: 0.2rem 32.15rem 0rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-e7P .scrollframe-p3o .mylist-v6q .content7-BVF .witingdate-wMw {
+  margin-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}

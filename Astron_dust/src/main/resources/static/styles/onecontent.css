@@ -1,0 +1,180 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 144rem;
+}.onecontent-zAh {
+  box-sizing: border-box;
+  padding: 3.65rem 5.55rem 3.8rem 5.55rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/notice_background.png');
+  background-color: #ffffff;
+}
+.onecontent-zAh .notice-board-tms {
+  margin: 0rem 116.5rem 4.15rem 0rem;
+  max-width: 16.4rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 0.8;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.onecontent-zAh .notice-board-tms .notice-board-tms-sub-0 {
+}
+.onecontent-zAh .notice-board-tms .notice-board-tms-sub-1 {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 0.8;
+  text-decoration-line: underline;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+}
+.onecontent-zAh .auto-group-p8y1-rcD {
+  margin: 0rem 6.55rem 2.8rem 6.55rem;
+  box-sizing: border-box;
+  padding: 3.1rem 5.9rem 4.9rem 5.6rem;
+  width: calc(100% - 13.1rem);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(217, 217, 217, 0.1099999994);
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.onecontent-zAh .auto-group-p8y1-rcD .title-83w {
+  margin-bottom: 3.4rem;
+  width: 100%;
+  height: 7.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  background-color: rgba(217, 217, 217, 0.5699999928);
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.onecontent-zAh .auto-group-p8y1-rcD .content-CZb {
+  box-sizing: border-box;
+  padding-top: 0.0768rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.onecontent-zAh .auto-group-p8y1-rcD .content-CZb .auto-group-g3q5-MSV {
+  margin: 0rem 1.3rem 0.9rem 0.107rem;
+  width: calc(100% - 1.4074rem);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.onecontent-zAh .auto-group-p8y1-rcD .content-CZb .auto-group-g3q5-MSV .content-HL9 {
+  margin: 0rem 72.393rem 1.023rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.onecontent-zAh .auto-group-p8y1-rcD .content-CZb .auto-group-g3q5-MSV .witingdate-11F {
+  margin-top: 1.0232rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.onecontent-zAh .auto-group-p8y1-rcD .content-CZb .auto-group-hchy-v8D {
+  box-sizing: border-box;
+  padding: 14.1rem 25.95rem 14rem 26.85rem;
+  width: 100%;
+  height: 48.1rem;
+  background-color: rgba(217, 217, 217, 0.5699999928);
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.onecontent-zAh .auto-group-p8y1-rcD .content-CZb .auto-group-hchy-v8D .there-is-new-homework-added-do-it-by-tomorrow-its-not-difficult-you-can-do-it-try-your-best-RKs {
+  max-width: 55.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+}
+.onecontent-zAh .savebox-BTT {
+  margin-left: 108.7rem;
+  width: 11.1rem;
+  height: 6.6rem;
+  cursor: pointer;
+  position: relative;
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.onecontent-zAh .savebox-BTT .save-K3s {
+  width: 5.5rem;
+  height: 2rem;
+  position: absolute;
+  left: 3rem;
+  top: 2.2rem;
+  display: flex;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 0.8;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.onecontent-zAh .savebox-BTT .saverect-2DB {
+  width: 11.1rem;
+  height: 6.6rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: solid 0.5rem #e8e8e8;
+  box-sizing: border-box;
+  background-color: rgba(232, 232, 232, 0);
+  border-radius: 1.2rem;
+}

@@ -1,0 +1,175 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 144rem;
+}.login-DAD {
+  box-sizing: border-box;
+  padding: 5.7rem 3.4rem 30.161rem 6.2rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/loginbackground-bg.png');
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+}
+.login-DAD .singup-w6D {
+  margin: 0rem 2.3rem 26.8rem 0rem;
+  width: 11.1rem;
+  height: 6.6rem;
+  cursor: pointer;
+  position: relative;
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.login-DAD .singup-w6D .signup-f2D {
+  width: 9.6rem;
+  height: 2rem;
+  position: absolute;
+  left: 0.85rem;
+  top: 2.3rem;
+  display: flex;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 0.8;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.login-DAD .singup-w6D .signuprectlogin-9i5 {
+  width: 11.1rem;
+  height: 6.6rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: solid 0.5rem #e8e8e8;
+  box-sizing: border-box;
+  background-color: rgba(232, 232, 232, 0);
+  border-radius: 1.2rem;
+}
+.login-DAD .auto-group-gjkh-G21 {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.login-DAD .auto-group-gjkh-G21 .auto-group-ega7-R9o {
+  margin: 0rem 16.2rem 0.639rem 0rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.login-DAD .auto-group-gjkh-G21 .auto-group-ega7-R9o .astrondust-95o {
+  margin-bottom: 3.4rem;
+  max-width: 63.7rem;
+  display: flex;
+  font-size: 20rem;
+  font-weight: 400;
+  line-height: 0.6;
+  color: #ffffff;
+  font-family: Nova Cut, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.login-DAD .auto-group-gjkh-G21 .auto-group-ega7-R9o .atston-dust-3gy {
+  margin: 0rem 0rem 1.1rem 0.2rem;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #bfbfbf;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.login-DAD .auto-group-gjkh-G21 .auto-group-ega7-R9o .you-can-see-many-constellations-and-talk-to-your-friends-9zu {
+  margin-left: 0.2rem;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #bfbfbf;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.login-DAD .auto-group-gjkh-G21 .login-4MB {
+  box-sizing: border-box;
+  padding: 0.619rem 0rem 0.619rem 0rem;
+  width: 54.5rem;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.login-DAD .auto-group-gjkh-G21 .login-4MB .login-zEq {
+  margin: 0rem 22.881rem 2.329rem 0rem;
+  display: flex;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 0.8;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.login-DAD .auto-group-gjkh-G21 .login-4MB .id-JWR {
+  margin-bottom: 2.3392rem;
+  box-sizing: border-box;
+  padding: 2.702rem 2.9rem 2.766rem 2.9rem;
+  width: 100%;
+  display: flex;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 0.8;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  background-color: rgba(217, 217, 217, 0.349999994);
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.login-DAD .auto-group-gjkh-G21 .login-4MB .password-NFP {
+  margin-bottom: 2.1974rem;
+  box-sizing: border-box;
+  padding: 2.595rem 2.9rem 2.872rem 2.9rem;
+  width: 100%;
+  display: flex;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 0.8;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  background-color: rgba(217, 217, 217, 0.349999994);
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.login-DAD .auto-group-gjkh-G21 .login-4MB .sign-in-to-astron-dust-2aq {
+  margin-right: 2.3rem;
+  display: flex;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 0.8;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}

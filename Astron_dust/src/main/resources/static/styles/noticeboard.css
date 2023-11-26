@@ -1,0 +1,448 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 144rem;
+}.noticeboard-fSm {
+  box-sizing: border-box;
+  padding: 4.2rem 5rem 9.9rem 6.15rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/notice_background.png');
+  background-color: #ffffff;
+}
+.noticeboard-fSm .auto-group-v5ab-a3w {
+  margin-bottom: 4.9rem;
+  width: 100%;
+  height: 11.3rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .auto-group-v5ab-a3w .notice-board-iA9 {
+  margin: 0.8rem 97.15rem 0rem 0rem;
+  max-width: 16.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 0.8;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.noticeboard-fSm .auto-group-v5ab-a3w .notice-board-iA9 .notice-board-iA9-sub-0 {
+}
+.noticeboard-fSm .auto-group-v5ab-a3w .notice-board-iA9 .notice-board-iA9-sub-1 {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 0.8;
+  text-decoration-line: underline;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+}
+.noticeboard-fSm .auto-group-v5ab-a3w .newnotice-U2q {
+  box-sizing: border-box;
+  padding: 1.65rem 0rem 1.65rem 2rem;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .auto-group-v5ab-a3w .newnotice-U2q .write-notice-CDj {
+  margin-right: 1rem;
+  max-width: 9.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.3333333333;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.noticeboard-fSm .auto-group-v5ab-a3w .newnotice-U2q .vector-JnZ {
+  margin-bottom: 0.7rem;
+  width: 6.4rem;
+  height: 6rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .descript-eLd {
+  margin: 0rem 16rem 2.1rem 10.05rem;
+  width: calc(100% - 26.05rem);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .descript-eLd .no-mRF {
+  margin: 1rem 8.8rem 0rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.3333333333;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .descript-eLd .writer-fmX {
+  margin: 1rem 30.2rem 0rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.3333333333;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .descript-eLd .title-PSd {
+  margin: 0rem 38.1rem 1rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.3333333333;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .descript-eLd .date-uQy {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.3333333333;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .content1-qZX {
+  margin: 0rem 8rem 4.8rem 6.95rem;
+  box-sizing: border-box;
+  padding: 3.1rem 2.6rem 3rem 3.1rem;
+  width: calc(100% - 14.95rem);
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 254, 242, 0.4099999964);
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .content1-qZX .item-1-wcZ {
+  margin: 0rem 10.05rem 0.2rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .content1-qZX .teacher-Ebf {
+  margin: 0.2rem 20.9rem 0rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .content1-qZX .hello-everyone-9id {
+  margin: 0.2rem 17.95rem 0rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .content1-qZX .witingdate-rN9 {
+  margin-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .content2-wuP {
+  margin: 0rem 8rem 4.8rem 6.95rem;
+  box-sizing: border-box;
+  padding: 2.9rem 2.6rem 2.9rem 3.1rem;
+  width: calc(100% - 14.95rem);
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 254, 242, 0.4099999964);
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .content2-wuP .item-2-3Bj {
+  margin: 0rem 9.1rem 0.1rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .content2-wuP .student1-kM3 {
+  margin: 0.5rem 26.65rem 0rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .content2-wuP .nice-day-TWM {
+  margin: 0rem 24.65rem 0.5rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .content2-wuP .witingdate-NNR {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .content3-roP {
+  margin: 0rem 8rem 4.8rem 6.95rem;
+  box-sizing: border-box;
+  padding: 2.9rem 2.8rem 3.2rem 3.1rem;
+  width: calc(100% - 14.95rem);
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 254, 242, 0.4099999964);
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .content3-roP .item-3-AJH {
+  margin: 0.2rem 9.1rem 0rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .content3-roP .student2-5g9 {
+  margin: 0.2rem 13.25rem 0rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .content3-roP .homework-is-soooo-easy-QTX {
+  margin: 0.2rem 11.05rem 0rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .content3-roP .witingdate-vRs {
+  margin-bottom: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .content4-okZ {
+  margin: 0rem 8rem 5.4rem 6.95rem;
+  box-sizing: border-box;
+  padding: 2.9rem 2.8rem 2.7rem 3.1rem;
+  width: calc(100% - 14.95rem);
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 254, 242, 0.4099999964);
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .content4-okZ .item-4-W9B {
+  margin: 0rem 9.1rem 0.3rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .content4-okZ .student3-pff {
+  margin: 0rem 13.25rem 0.7rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .content4-okZ .homework-is-soooo-hard-9C9 {
+  margin: 0rem 11.05rem 0.7rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .content4-okZ .witingdate-rcM {
+  margin-top: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .pagenum-LnR {
+  margin: 0rem 57.05rem 0rem 56.8rem;
+  width: calc(100% - 113.85rem);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .pagenum-LnR .item-1-4iR {
+  margin-right: 7.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.3333333333;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .pagenum-LnR .item-2-bTT {
+  margin-right: 6.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.3333333333;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.noticeboard-fSm .pagenum-LnR .item-3-Xc1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.3333333333;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}

@@ -1,0 +1,187 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 144rem;
+}.observe-p1b {
+  box-sizing: border-box;
+  padding: 4.2rem 6.1rem 9.2rem 5rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/observe_background.png');
+}
+.observe-p1b .observe-39F {
+  margin-bottom: 4.4rem;
+  display: flex;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 0.4;
+  text-decoration-line: underline;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.observe-p1b .auto-group-ynrz-qL1 {
+  margin-left: 2.4rem;
+  width: calc(100% - 2.4rem);
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.observe-p1b .auto-group-ynrz-qL1 .observestar-jiD {
+  margin-right: 5.1rem;
+  width: 82.4rem;
+  height: 82.6rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.observe-p1b .auto-group-ynrz-qL1 .auto-group-yeyz-1fj {
+  box-sizing: border-box;
+  padding: 25.45rem 2.6rem 2.5rem 2.5rem;
+  width: 43rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.2899999917);
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.observe-p1b .auto-group-ynrz-qL1 .auto-group-yeyz-1fj .get1-4tu {
+  margin-bottom: 0.15rem;
+  width: 100%;
+  height: 14.05rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.observe-p1b .auto-group-ynrz-qL1 .auto-group-yeyz-1fj .get1-4tu .getrect-LrR {
+  width: 37.9rem;
+  height: 9.3rem;
+  position: absolute;
+  left: 0;
+  top: 4.75rem;
+  background-color: #bbcaff;
+  border-radius: 0 1.2rem 1.2rem 1.2rem;
+}
+.observe-p1b .auto-group-ynrz-qL1 .auto-group-yeyz-1fj .get1-4tu .hi-yuP {
+  width: 4.4rem;
+  height: 2rem;
+  position: absolute;
+  left: 2.4rem;
+  top: 8.2rem;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.observe-p1b .auto-group-ynrz-qL1 .auto-group-yeyz-1fj .get1-4tu .james-z3o {
+  width: 6.9rem;
+  height: 5rem;
+  position: absolute;
+  left: 0.2rem;
+  top: 0;
+  display: flex;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 2;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.observe-p1b .auto-group-ynrz-qL1 .auto-group-yeyz-1fj .get2-2FP {
+  margin-bottom: 3.5rem;
+  width: 100%;
+  height: 14.05rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.observe-p1b .auto-group-ynrz-qL1 .auto-group-yeyz-1fj .get2-2FP .getrect-8ZK {
+  width: 37.9rem;
+  height: 9.3rem;
+  position: absolute;
+  left: 0;
+  top: 4.75rem;
+  background-color: #bbcaff;
+  border-radius: 0 1.2rem 1.2rem 1.2rem;
+}
+.observe-p1b .auto-group-ynrz-qL1 .auto-group-yeyz-1fj .get2-2FP .hello-zrR {
+  width: 6.6rem;
+  height: 2rem;
+  position: absolute;
+  left: 2.4rem;
+  top: 8.2rem;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.observe-p1b .auto-group-ynrz-qL1 .auto-group-yeyz-1fj .get2-2FP .julia-3Zo {
+  width: 6.9rem;
+  height: 5rem;
+  position: absolute;
+  left: 0.2rem;
+  top: 0;
+  display: flex;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 2;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.observe-p1b .auto-group-ynrz-qL1 .auto-group-yeyz-1fj .send-fbB {
+  margin-bottom: 6.5rem;
+  box-sizing: border-box;
+  padding: 3.45rem 2.1rem 3.85rem 28.1rem;
+  width: 100%;
+  text-align: right;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  background-color: #ffffff;
+  border-radius: 1.2rem 0 1.2rem 1.2rem;
+  flex-shrink: 0;
+}
+.observe-p1b .auto-group-ynrz-qL1 .auto-group-yeyz-1fj .writing-SEZ {
+  margin: 0rem 0.3rem 0rem 0.4rem;
+  box-sizing: border-box;
+  padding: 2.65rem 2rem 2.05rem 2rem;
+  width: calc(100% - 0.7rem);
+  display: flex;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  background-color: rgba(255, 255, 255, 0.3000000119);
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
