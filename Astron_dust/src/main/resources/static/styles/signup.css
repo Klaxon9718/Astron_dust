@@ -13,7 +13,7 @@ input {
 	border: none;
 }
 body {
-  width: 144rem;
+  
 }.signup-xoP {
   box-sizing: border-box;
   padding: 3.8rem 3.9rem 21.1rem 3.9rem;
@@ -26,7 +26,7 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('../assets/loginbackground-bg-aY5.png');
+  background-image: url('../assets/login_background.png');
   background-color: #ffffff;
 }
 .signup-xoP .astrondustimg-svM {
@@ -173,7 +173,7 @@ body {
   width: 5.5rem;
   height: 2rem;
   position: absolute;
-  left: 3rem;
+  left: 28rem;
   top: 2.3rem;
   display: flex;
   font-size: 2.5rem;
@@ -187,7 +187,7 @@ body {
   width: 11.1rem;
   height: 6.6rem;
   position: absolute;
-  left: 0;
+  left: 25rem;
   top: 0;
   border: solid 0.5rem #e8e8e8;
   box-sizing: border-box;
