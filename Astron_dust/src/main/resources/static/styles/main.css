@@ -12,21 +12,23 @@ input {
 	border: none;
 }
 body {
-  width: 144rem;
-}.main-LZK {
+
+}.frame-1-LNh {
   box-sizing: border-box;
-  padding: 23.3rem 10.8rem;
+  padding: 17.3rem 17rem 16.1rem 13.5rem;
   width: 100%;
-  height: 500rem;
   overflow: hidden;
   position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url('../assets/main_background.png');
-  background-color: #000000;
 }
-.main-LZK .astrondust-Ghs {
+.frame-1-LNh .astrondust-SwX {
+  margin: 0rem 90rem 10rem 0rem;
   max-width: 63.7rem;
   display: flex;
   font-size: 20rem;
@@ -34,28 +36,13 @@ body {
   line-height: 0.6;
   color: #ffffff;
   font-family: Nova Cut, 'Source Sans Pro';
+  flex-shrink: 0;
 }
-
-#mainImg1 {
-  position: absolute;
-  top: 537px;
-  left: 616px;
-}
-
-#mainImg2 {
-  position: absolute;
-  top: 1300px;
-  left: 34px;
-}
-
-#mainImg3 {
-  position: absolute;
-  top: 2542px;
-  left: 34px;
-}
-
-#mainImg4 {
-  position: absolute;
-  top: 3830px;
-  left: 34px;
+.frame-1-LNh .image-1-wNV {
+  	flex-shrink: 0;
+    height: 36rem;
+    margin-left: 48rem;
+    object-fit: cover;
+    vertical-align: top;
+    width: 76rem;
 }
