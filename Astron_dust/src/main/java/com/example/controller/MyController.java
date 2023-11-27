@@ -67,5 +67,9 @@ public class MyController {
         return "/onecontent";
     }
     
+    @GetMapping("/header")
+    public String header() {
+        return "/header";
+    }
  
 }

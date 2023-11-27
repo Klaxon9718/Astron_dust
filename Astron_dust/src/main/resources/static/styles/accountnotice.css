@@ -13,8 +13,8 @@ input {
 	border: none;
 }
 body {
-  width: 144rem;
-}.accountnotice-xdB {
+  
+}.accountnotice-wED {
   box-sizing: border-box;
   padding: 4.9rem 4.1rem;
   width: 100%;
@@ -29,7 +29,7 @@ body {
   background-image: url('../assets/mypage_background.png');
   background-color: #ffffff;
 }
-.accountnotice-xdB .vector-ULd {
+.accountnotice-wED .vector-rry {
   margin: 0rem 127.8rem 5.3rem 0rem;
   width: 8rem;
   height: 5.6rem;
@@ -38,7 +38,7 @@ body {
   vertical-align: top;
   flex-shrink: 0;
 }
-.accountnotice-xdB .auto-group-hjrz-bRF {
+.accountnotice-wED .auto-group-3nnr-any {
   margin: 0rem 8rem 1.5rem 8rem;
   box-sizing: border-box;
   padding: 3.7rem 5.9rem 4.9rem 5.6rem;
@@ -50,7 +50,7 @@ body {
   border-radius: 1.2rem;
   flex-shrink: 0;
 }
-.accountnotice-xdB .auto-group-hjrz-bRF .title-gxV {
+.accountnotice-wED .auto-group-3nnr-any .title-sXB {
   margin-bottom: 2.8rem;
   width: 100%;
   height: 7.9rem;
@@ -59,7 +59,7 @@ body {
   border-radius: 1.2rem;
   flex-shrink: 0;
 }
-.accountnotice-xdB .auto-group-hjrz-bRF .title-gxV .title-32M {
+.accountnotice-wED .auto-group-3nnr-any .title-sXB .title-czZ {
   margin: 0rem 4.6rem 0.1rem 0rem;
   display: flex;
   align-items: center;
@@ -72,7 +72,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.accountnotice-xdB .auto-group-hjrz-bRF .title-gxV .auto-group-bxw7-9LH {
+.accountnotice-wED .auto-group-3nnr-any .title-sXB .auto-group-trkh-X5w {
   width: 92.7rem;
   height: 100%;
   display: flex;
@@ -88,7 +88,7 @@ body {
   border-radius: 1.2rem;
   flex-shrink: 0;
 }
-.accountnotice-xdB .auto-group-hjrz-bRF .content-dFT {
+.accountnotice-wED .auto-group-3nnr-any .content-bLh {
   box-sizing: border-box;
   padding-top: 0.0768rem;
   width: 100%;
@@ -97,7 +97,7 @@ body {
   border-radius: 1.2rem;
   flex-shrink: 0;
 }
-.accountnotice-xdB .auto-group-hjrz-bRF .content-dFT .content-yKK {
+.accountnotice-wED .auto-group-3nnr-any .content-bLh .content-jSu {
   margin-bottom: 1.9232rem;
   width: 100%;
   display: flex;
@@ -111,7 +111,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.accountnotice-xdB .auto-group-hjrz-bRF .content-dFT .auto-group-pekd-5t9 {
+.accountnotice-wED .auto-group-3nnr-any .content-bLh .auto-group-xjrb-3yP {
   width: 100%;
   height: 48.1rem;
   display: flex;
@@ -127,14 +127,14 @@ body {
   border-radius: 1.2rem;
   flex-shrink: 0;
 }
-.accountnotice-xdB .delete-8bX {
+.accountnotice-wED .delete-tz1 {
   margin: 0rem 7.95rem 0rem 109.2rem;
   width: calc(100% - 117.15rem);
   display: flex;
   align-items: flex-end;
   flex-shrink: 0;
 }
-.accountnotice-xdB .delete-8bX .vector-fLZ {
+.accountnotice-wED .delete-tz1 .vector-E2H {
   margin-right: 1.05rem;
   width: 6.1rem;
   height: 6.8rem;
@@ -142,7 +142,7 @@ body {
   vertical-align: top;
   flex-shrink: 0;
 }
-.accountnotice-xdB .delete-8bX .delete-Q3F {
+.accountnotice-wED .delete-tz1 .delete-Msb {
   margin-bottom: 0.25rem;
   display: flex;
   align-items: center;

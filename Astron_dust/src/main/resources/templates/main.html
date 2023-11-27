@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <title>main</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nova+Cut%3A400"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400"/>
-  <link rel="stylesheet" href="./styles/main.css"/>
+<meta charset="utf-8" />
+<link rel="icon" href="/favicon.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#000000" />
+<title>main</title>
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Nova+Cut%3A400" />
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400" />
+<link rel="stylesheet" href="./styles/main.css" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
-
 <body>
-<section class="d-flex vh-100">
+	<div th:replace="./header :: header"></div>
 
-<div class="frame-1-LNh">
-  <div class="astrondust-SwX">Astron</br>dust</div>
-  <img class="image-1-wNV" src="./assets/image-1.png"/>
-</div>
-
-</section>
+		<div class="frame-1-LNh">
+			<div class="astrondust-SwX">
+				Astron</br>dust
+			</div>
+			<img class="image-1-wNV" src="./assets/image-1.png" />
+		</div>
+	</section>
 </body>
