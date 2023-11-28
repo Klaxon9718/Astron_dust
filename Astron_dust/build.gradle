@@ -27,6 +27,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-web-services'
+    implementation 'org.springframework.boot:spring-boot-starter-websocket'
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
@@ -36,6 +37,9 @@ dependencies {
        // mybatis와 관련된 dependency (jdbc, mybatis)
     implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
     implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.0'
+    
+    	// gson라이브러리
+    implementation 'com.google.code.gson:gson:2.8.8'
 }
 
 tasks.named('test') {

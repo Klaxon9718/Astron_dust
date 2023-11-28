@@ -9,6 +9,66 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anonymous+Pro%3A400%2C700"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C700"/>
   <link rel="stylesheet" href="./styles/observe.css"/>
+  
+  <style>
+        .writing-SEZ input {
+            border: none; /* 테두리 제거 */
+            background-color: transparent; /* 배경색 투명하게 설정 */
+            font-size: 15px; /* 글자 크기 설정 */
+            outline: none; /* 클릭 시 테두리 제거 */
+        }
+        
+        #writingmessage {
+		  position: sticky;
+		  bottom: 0;
+		}
+       
+        #sendmessage {
+		  white-space: normal !important;
+		  text-align: left;
+		  padding: 3.45rem 2.1rem 3.85rem 2.1rem;
+		  margin-top: -25px;
+		}
+		
+		#receivemessage{
+			margin-bottom: 60px;
+			margin-top: -45px;
+		}
+		
+		.auto-group-yeyz-1fj {
+		    display: flex;
+		    flex-direction: column;
+		    justify-content: space-between;
+		    height: 700px;
+		}
+
+		#chatwindow{
+			height: 700px;
+			overflow-y: auto;
+		}
+		
+		/* 스크롤바의 전체 너비 */
+	    ::-webkit-scrollbar {
+	      width: 6px;
+	    }
+	
+	    /* 스크롤바의 배경 */
+	    ::-webkit-scrollbar-track {
+	      background: transparent;
+	    }
+	
+	    /* 스크롤바의 핸들(움직이는 부분) */
+	    ::-webkit-scrollbar-thumb {
+	      background: #2a2452;
+	      border-radius: 5px;
+	    }
+	
+	    /* 스크롤바의 핸들 호버시(커서 올렸을 때) */
+	    ::-webkit-scrollbar-thumb:hover {
+	      background: #3f3a5e;
+	    }
+		
+    </style>
 </head>
 <body>
 
@@ -18,23 +78,94 @@
   <div class="observe-39F">observe</div>
   <div class="auto-group-ynrz-qL1">
     <div class="observestar-jiD">
+    <iframe src="https://stellarium-web.org/" width="100%" height="100%" frameborder="0"></iframe>
     </div>
-    <div class="auto-group-yeyz-1fj">
-      <div class="get1-4tu">
-        <div class="getrect-LrR">
-        </div>
-        <div class="hi-yuP">hi!!</div>
-        <div class="james-z3o">james</div>
-      </div>
-      <div class="get2-2FP">
-        <div class="getrect-8ZK">
-        </div>
+    <div class="auto-group-yeyz-1fj" id="chatwindow">
+      <div id="chatwindow">
+	      <div id="messageContainer"></div> <!-- 채팅 메시지를 담는 컨테이너 생성 -->
+	  </div>
+      <!--<div class="get2-2FP" id="receivemessage">
+        <div class="getrect-8ZK"></div>
         <div class="hello-zrR">hello!</div>
         <div class="julia-3Zo">julia</div>
       </div>
-      <div class="send-fbB">nice!!!</div>
-      <div class="writing-SEZ">good day</div>
+      <div class="send-fbB" id="sendmessage"></div>-->
+      <div class="writing-SEZ" id="writingmessage"><input type="text" placeholder="텍스트를 입력하세요"></div>
     </div>
+    
   </div>
 </div>
+
+	<script>
+		// 서버와의 WebSocket 연결 생성
+		var socket = new WebSocket("ws://localhost:8080/ws/chat");
+		
+		var userId = prompt("아이디를 입력해주세요.");
+		
+		socket.onopen = function(event) {
+		    console.log("WebSocket is open now.");
+		 	// 사용자 ID, TYPE을 서버에 보냄
+		    socket.send(JSON.stringify({ type: 'JOIN', userId: userId}));
+		};
+		
+		socket.onclose = function(event) {
+		    console.log("WebSocket is closed now.");
+		    console.log(event);
+		};
+
+		// 서버로부터 메시지를 받았을 때 화면에 표시함
+		socket.onmessage = function(event){  //onmessage : 웹소켓에서 제공하는 이벤트 핸들러로, 웹소켓을 통해 서버로부터 메시지가 도착했을 때 호출됨
+			var message = JSON.parse(event.data); //event.data : 서버로부터 받은 메시지 내용이 담겨있음
+			var chatArea;
+			
+			if(message.sender == userId){
+				// 메시지가 사용자로부터 왔을 때
+		        chatArea = document.createElement('div');
+		        chatArea.id = 'sendmessage';
+		        chatArea.classList.add('send-fbB');
+		        chatArea.textContent = message.text;
+			}else{
+				// 메시지가 서버로부터 왔을 때
+		        chatArea = document.createElement('div');
+		        chatArea.className = 'get2-2FP';
+		        chatArea.id = 'receivemessage';
+
+		        var rectDiv = document.createElement('div');
+		        rectDiv.className = 'getrect-8ZK';
+		        chatArea.appendChild(rectDiv);
+
+		        var textDiv = document.createElement('div');
+		        textDiv.className = 'hello-zrR';
+		        textDiv.textContent = message.text;
+		        chatArea.appendChild(textDiv);
+
+		        var senderDiv = document.createElement('div');
+		        senderDiv.className = 'julia-3Zo';
+		        senderDiv.textContent = message.sender;
+		        chatArea.appendChild(senderDiv);
+			}
+			
+			var chatWindow = document.querySelector('.auto-group-yeyz-1fj');
+			var writingMessage = document.getElementById('writingmessage');
+			chatWindow.insertBefore(chatArea, writingMessage); // 메시지를 입력창 위에 추가
+			
+			chatWindow.scrollTop = chatWindow.scrollHeight;
+		};
+		
+		// 텍스트 입력창에서 엔터키 누르면, 내용을 서버로 보냄
+		var messageInput = document.getElementById('writingmessage').querySelector('input');
+		messageInput.addEventListener('keypress', function(event){
+			if(event.key == 'Enter' && messageInput.value.trim() != '' ){
+				// 메시지 타입을 'TALK'로 설정하여 서버에 보냄
+		        var message = {
+		            type: 'TALK',
+		            userId: userId, // 사용자 아이디를 설정합니다.
+		            text: messageInput.value,
+		            sender: userId
+		        };
+		        socket.send(JSON.stringify(message));
+		        messageInput.value='';
+			}
+		});
+	</script>
 </body>
