@@ -82,6 +82,11 @@ async function signUp() {
 
   const result = await response.json();
 
+  if (password !== checkPassword) {
+	    Swal.fire('비밀번호 불일치', '입력한 비밀번호와 확인 비밀번호가 일치하지 않습니다.', 'error');
+	    return;
+	  }
+  
   if (response.ok && !response.error) {
     Swal.fire('회원가입 완료', '회원가입이 완료되었습니다.', 'success');
   } else {
