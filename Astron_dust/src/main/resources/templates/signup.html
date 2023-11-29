@@ -17,29 +17,29 @@
 <section class="d-flex vh-100">
 <div class="signup-xoP">
   <img class="astrondustimg-svM" src="./assets/astrondustimg.png"/>
-  <form name="createUser" action="/signup" method="POST">
+  <form th:action="@{/signup}" method="post">
   <div class="id-zzy">
     <div class="putyourid-Jkm">Put your ID</div>
-             <input class="auto-group-7z4s-zdb" type="text" placeholder="ID" id="uidInput" name="UID" />
+             <input class="auto-group-7z4s-zdb" type="text" placeholder="ID" id="uidInput" name="UID"  />
         <img class="idcheck-rA1" id="idCheckImage" src="./assets/idcheck.png" />
   </div>
   <div class="password-z1K">
     <div class="auto-group-ih3y-uPB">
       <div class="putyourpw-d4H">Put your password</div>
-      <input type="password" class="auto-group-nd7q-jt1" placeholder="password" name="password"/>
+      <input type="password" class="auto-group-nd7q-jt1" placeholder="password" name="password" />
     </div>
     <div class="auto-group-6znb-pPf">
       <div class="checkyourpw-AyK">check your password</div>
-      <input type="password" class="auto-group-g7oh-6MB" placeholder="check password" name="checkPassword"/>
+      <input type="password" class="auto-group-g7oh-6MB" placeholder="check password" name="checkPassword" />
     </div>
   </div>
   
-  <div class="joinbox-Kzd">
-    <div class="jointxt-U6q">
-        <input type="submit" value="Join" style="background:none; border:none; color:#ffffff; font-size:2.5rem; font-weight:700; line-height:0.8; font-family:Anonymous Pro, 'Source Sans Pro';"/>
-    </div>
-    <div class="joinrect-mbj">
-    </div>
+ <button type="submit" class="joinbox-Kzd">
+    <span class="jointxt-U6q">join</span>
+    <span class="joinrect-mbj"></span>
+</button>
+
+    
 </div>
 
   </form>
@@ -64,4 +64,5 @@ uidInput.addEventListener('input', async () => {
 });
 
 </script>
+
 </body>

@@ -161,15 +161,11 @@ body {
   flex-shrink: 0;
 }
 .signup-xoP .joinbox-Kzd {
-  margin-left: 91.5rem;
-  width: 11.1rem;
-  height: 6.6rem;
-  cursor: pointer;
-  position: relative;
-  border-radius: 1.2rem;
-  flex-shrink: 0;
+  
 }
 .signup-xoP .joinbox-Kzd .jointxt-U6q {
+	margin-left: 125rem;
+	margin-top: 73rem;
   width: 5.5rem;
   height: 2rem;
   position: absolute;
@@ -184,6 +180,8 @@ body {
   white-space: nowrap;
 }
 .signup-xoP .joinbox-Kzd .joinrect-mbj {
+	margin-left: 125rem;
+	margin-top: 73rem;
   width: 11.1rem;
   height: 6.6rem;
   position: absolute;
