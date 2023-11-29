@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anonymous+Pro%3A700"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A700"/>
   <link rel="stylesheet" href="./styles/signup.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"> <!-- 부트스트립 사용 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- 안내창 제목을 바꾸기 위한 코드 -->
 </head>
 
 <body>
@@ -17,7 +18,9 @@
 <section class="d-flex vh-100">
 <div class="signup-xoP">
   <img class="astrondustimg-svM" src="./assets/astrondustimg.png"/>
-  <form th:action="@{/signup}" method="post">
+  
+<form th:action="@{/signup}" method="post" onsubmit="event.preventDefault(); signUp();">
+  
   <div class="id-zzy">
     <div class="putyourid-Jkm">Put your ID</div>
              <input class="auto-group-7z4s-zdb" type="text" placeholder="ID" id="uidInput" name="UID"  />
@@ -39,7 +42,6 @@
     <span class="joinrect-mbj"></span>
 </button>
 
-    
 </div>
 
   </form>
@@ -47,6 +49,7 @@
 </section>
 
 <script>
+// 아이디 중복 체크
 const idCheckImage = document.getElementById('idCheckImage');
 const uidInput = document.getElementById('uidInput');
 
@@ -62,6 +65,29 @@ uidInput.addEventListener('input', async () => {
     idCheckImage.src = './assets/idcheck-green.png';
   }
 });
+
+// 아이디 주
+async function signUp() {
+  const UID = document.querySelector('input[name="UID"]').value;
+  const password = document.querySelector('input[name="password"]').value;
+  const checkPassword = document.querySelector('input[name="checkPassword"]').value;
+
+  const response = await fetch('/signup', {
+    method: 'POST',
+    body: `UID=${UID}&password=${password}&checkPassword=${checkPassword}`,
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    }
+  });
+
+  const result = await response.json();
+
+  if (response.ok && !response.error) {
+    Swal.fire('회원가입 완료', '회원가입이 완료되었습니다.', 'success');
+  } else {
+    Swal.fire('중복된 아이디', '이미 존재하는 회원입니다.', 'error');
+  }
+}
 
 </script>
 

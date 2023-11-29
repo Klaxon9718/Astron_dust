@@ -1,5 +1,7 @@
 package com.example.member;
 
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,9 +25,14 @@ public class MemberController {
     
     // 값을 받아서 signUP함수로 전달
     @PostMapping("/signup")
-    public String signUp(@RequestParam("UID") String UID, @RequestParam("password") String password, @RequestParam("checkPassword") String checkPassword) {
-    	memberService.signUp(UID, password, checkPassword);
-        return "redirect:/login";
+    public ResponseEntity<?> signUp(@RequestParam("UID") String UID, @RequestParam("password") String password, @RequestParam("checkPassword") String checkPassword) {
+      try {
+        memberService.signUp(UID, password, checkPassword);
+        return new ResponseEntity<>(Map.of("message", "회원가입이 완료되었습니다."), HttpStatus.OK);
+      } catch (IllegalArgumentException e) {
+        return new ResponseEntity<>(Map.of("message", e.getMessage()), HttpStatus.BAD_REQUEST);
+      }
     }
+
 }
 
