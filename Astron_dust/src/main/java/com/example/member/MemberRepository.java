@@ -14,5 +14,6 @@ public interface MemberRepository extends JpaRepository<Member, String> {
 	 * 이후 코드에서 Null Pointer Exception을 방지할 수 있습니다.
 	 */
 	Optional<Member> findByUID(String UID);
+	
 }
 

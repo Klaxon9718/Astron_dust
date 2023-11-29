@@ -24,6 +24,7 @@ public class MemberController {
     }
     
     // 값을 받아서 signUP함수로 전달
+    // 성공 여부 반환
     @PostMapping("/signup")
     public ResponseEntity<?> signUp(@RequestParam("UID") String UID, @RequestParam("password") String password, @RequestParam("checkPassword") String checkPassword) {
       try {
@@ -33,6 +34,22 @@ public class MemberController {
         return new ResponseEntity<>(Map.of("message", e.getMessage()), HttpStatus.BAD_REQUEST);
       }
     }
+    
+    // 로그인
+    @PostMapping("/login")
+    public ResponseEntity<?> login(@RequestParam("UID") String UID, @RequestParam("password") String password) {
+      try {
+        boolean isAuthenticated = memberService.authenticate(UID, password);
+        if (isAuthenticated) {
+          return new ResponseEntity<>(HttpStatus.OK);
+        } else {
+          return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
+        }
+      } catch (IllegalArgumentException e) {
+        return new ResponseEntity<>(Map.of("message", e.getMessage()), HttpStatus.BAD_REQUEST);
+      }
+    }
+
 
 }
 
