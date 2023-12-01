@@ -23,6 +23,7 @@ public class MyController {
         return "/signup";
     }
     
+    
     @GetMapping("/main")
     public String main(HttpServletRequest request, Model model) {
         HttpSession session = request.getSession();
@@ -38,6 +39,7 @@ public class MyController {
     }
 
     
+    
     @GetMapping("/account")
     public String account(HttpServletRequest request, Model model) {
         HttpSession session = request.getSession();
@@ -49,48 +51,145 @@ public class MyController {
         }
 
         model.addAttribute("UID", UID); // UID를 모델에 추가합니다. 이렇게 하면 뷰에서 UID를 사용할 수 있습니다.
-        return "/account"; // main 뷰를 반환합니다.
+        return "/account"; 
     }
+    
+    
     
     @GetMapping("/accountnotice")
-    public String accountnotice() {
-        return "/accountnotice";
+    public String accountnotice(HttpServletRequest request, Model model) {
+        HttpSession session = request.getSession();
+        String UID = (String) session.getAttribute("UID"); // 세션에서 UID를 가져옵니다.
+
+        // 세션 없을 경우
+        if (UID == null) { 
+            return "redirect:/login";
+        }
+
+        model.addAttribute("UID", UID); // UID를 모델에 추가합니다. 이렇게 하면 뷰에서 UID를 사용할 수 있습니다.
+        return "/accountnotice"; 
     }
     
+    
+    
+   
     @GetMapping("/deleteaccount")
-    public String deleteaccount() {
-        return "/deleteaccount";
+    public String deleteaccount(HttpServletRequest request, Model model) {
+        HttpSession session = request.getSession();
+        String UID = (String) session.getAttribute("UID"); // 세션에서 UID를 가져옵니다.
+
+        // 세션 없을 경우
+        if (UID == null) { 
+            return "redirect:/login";
+        }
+
+        model.addAttribute("UID", UID); // UID를 모델에 추가합니다. 이렇게 하면 뷰에서 UID를 사용할 수 있습니다.
+        return "/deleteaccount"; 
     }
+    
+    
     
     @GetMapping("/goodbye")
-    public String goodbye() {
-        return "/goodbye";
+    public String goodbye(HttpServletRequest request, Model model) {
+        HttpSession session = request.getSession();
+        String UID = (String) session.getAttribute("UID"); // 세션에서 UID를 가져옵니다.
+
+        // 세션 없을 경우
+        if (UID == null) { 
+            return "redirect:/login";
+        }
+
+        model.addAttribute("UID", UID); // UID를 모델에 추가합니다. 이렇게 하면 뷰에서 UID를 사용할 수 있습니다.
+        return "/goodbye"; 
     }
+    
+    
+    
     
     @GetMapping("/makenotice")
-    public String makenotice() {
-        return "/makenotice";
+    public String makenotice(HttpServletRequest request, Model model) {
+        HttpSession session = request.getSession();
+        String UID = (String) session.getAttribute("UID"); // 세션에서 UID를 가져옵니다.
+
+        // 세션 없을 경우
+        if (UID == null) { 
+            return "redirect:/login";
+        }
+
+        model.addAttribute("UID", UID); // UID를 모델에 추가합니다. 이렇게 하면 뷰에서 UID를 사용할 수 있습니다.
+        return "/makenotice"; 
     }
+    
+    
+    
     
     @GetMapping("/nasapictures")
-    public String nasapictures() {
-        return "/nasapictures";
+    public String nasapictures(HttpServletRequest request, Model model) {
+        HttpSession session = request.getSession();
+        String UID = (String) session.getAttribute("UID"); // 세션에서 UID를 가져옵니다.
+
+        // 세션 없을 경우
+        if (UID == null) { 
+            return "redirect:/login";
+        }
+
+        model.addAttribute("UID", UID); // UID를 모델에 추가합니다. 이렇게 하면 뷰에서 UID를 사용할 수 있습니다.
+        return "/nasapictures"; 
     }
+    
+    
+    
     
     @GetMapping("/noticeboard")
-    public String noticeboard() {
-        return "/noticeboard";
+    public String noticeboard(HttpServletRequest request, Model model) {
+        HttpSession session = request.getSession();
+        String UID = (String) session.getAttribute("UID"); // 세션에서 UID를 가져옵니다.
+
+        // 세션 없을 경우
+        if (UID == null) { 
+            return "redirect:/login";
+        }
+
+        model.addAttribute("UID", UID); // UID를 모델에 추가합니다. 이렇게 하면 뷰에서 UID를 사용할 수 있습니다.
+        return "/noticeboard"; 
     }
+    
+    
+    
     
     @GetMapping("/observe")
-    public String observe() {
-        return "/observe";
+    public String observe(HttpServletRequest request, Model model) {
+        HttpSession session = request.getSession();
+        String UID = (String) session.getAttribute("UID"); // 세션에서 UID를 가져옵니다.
+
+        // 세션 없을 경우
+        if (UID == null) { 
+            return "redirect:/login";
+        }
+
+        model.addAttribute("UID", UID); // UID를 모델에 추가합니다. 이렇게 하면 뷰에서 UID를 사용할 수 있습니다.
+        return "/observe"; 
     }
     
+    
+    
+    
     @GetMapping("/onecontent")
-    public String onecontent() {
-        return "/onecontent";
+    public String onecontent(HttpServletRequest request, Model model) {
+        HttpSession session = request.getSession();
+        String UID = (String) session.getAttribute("UID"); // 세션에서 UID를 가져옵니다.
+
+        // 세션 없을 경우
+        if (UID == null) { 
+            return "redirect:/login";
+        }
+
+        model.addAttribute("UID", UID); // UID를 모델에 추가합니다. 이렇게 하면 뷰에서 UID를 사용할 수 있습니다.
+        return "/goodbye"; 
     }
+    
+    
+    
     
     @GetMapping("/logout")
     public String logout(HttpServletRequest request) {
