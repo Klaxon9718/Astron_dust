@@ -13,7 +13,7 @@ input {
 	border: none;
 }
 body {
-  width: 144rem;
+ 
 }.noticeboard-fSm {
   box-sizing: border-box;
   padding: 4.2rem 5rem 9.9rem 6.15rem;
@@ -91,8 +91,8 @@ body {
   flex-shrink: 0;
 }
 .noticeboard-fSm .descript-eLd {
-  margin: 0rem 16rem 2.1rem 10.05rem;
-  width: calc(100% - 26.05rem);
+  margin: 0rem 8rem 2.1rem 10.05rem;
+  width:  120rem ;
   display: flex;
   align-items: center;
   flex-shrink: 0;
@@ -153,7 +153,7 @@ body {
   margin: 0rem 8rem 4.8rem 6.95rem;
   box-sizing: border-box;
   padding: 3.1rem 2.6rem 3rem 3.1rem;
-  width: calc(100% - 14.95rem);
+  width:  120rem ;
   display: flex;
   align-items: center;
   background-color: rgba(255, 254, 242, 0.4099999964);
@@ -216,7 +216,7 @@ body {
   margin: 0rem 8rem 4.8rem 6.95rem;
   box-sizing: border-box;
   padding: 2.9rem 2.6rem 2.9rem 3.1rem;
-  width: calc(100% - 14.95rem);
+  width:  120rem ;
   display: flex;
   align-items: center;
   background-color: rgba(255, 254, 242, 0.4099999964);
@@ -279,7 +279,7 @@ body {
   margin: 0rem 8rem 4.8rem 6.95rem;
   box-sizing: border-box;
   padding: 2.9rem 2.8rem 3.2rem 3.1rem;
-  width: calc(100% - 14.95rem);
+  width:  120rem ;
   display: flex;
   align-items: center;
   background-color: rgba(255, 254, 242, 0.4099999964);
@@ -342,7 +342,7 @@ body {
   margin: 0rem 8rem 5.4rem 6.95rem;
   box-sizing: border-box;
   padding: 2.9rem 2.8rem 2.7rem 3.1rem;
-  width: calc(100% - 14.95rem);
+  width:  120rem ;
   display: flex;
   align-items: center;
   background-color: rgba(255, 254, 242, 0.4099999964);
@@ -402,7 +402,7 @@ body {
   flex-shrink: 0;
 }
 .noticeboard-fSm .pagenum-LnR {
-  margin: 0rem 57.05rem 0rem 56.8rem;
+  margin: 0rem 30rem 0rem 56.8rem;
   width: calc(100% - 113.85rem);
   display: flex;
   align-items: center;

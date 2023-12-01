@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anonymous+Pro%3A700"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A700"/>
   <link rel="stylesheet" href="./styles/makenotice.css"/>
+  <link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   
   <style>
   button {
@@ -46,8 +48,10 @@
       background: #3f3a5e;
     }
   </style>
+
 </head>
 <body>
+	<div th:replace="./header :: header"></div>
 <div class="makenotice-fzM">
   <form action="/notice" method="post">
   	<div class="notice-board-zWq">

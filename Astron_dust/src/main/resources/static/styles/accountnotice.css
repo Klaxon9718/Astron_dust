@@ -1,0 +1,157 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  
+}.accountnotice-wED {
+  box-sizing: border-box;
+  padding: 4.9rem 4.1rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/mypage_background.png');
+  background-color: #ffffff;
+}
+.accountnotice-wED .vector-rry {
+  margin: 0rem 127.8rem 5.3rem 0rem;
+  width: 8rem;
+  height: 5.6rem;
+  cursor: pointer;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.accountnotice-wED .auto-group-3nnr-any {
+  margin: 0rem 8rem 1.5rem 8rem;
+  box-sizing: border-box;
+  padding: 3.7rem 5.9rem 4.9rem 5.6rem;
+  width: calc(100% - 16rem);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(217, 217, 217, 0.3100000024);
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.accountnotice-wED .auto-group-3nnr-any .title-sXB {
+  margin-bottom: 2.8rem;
+  width: 100%;
+  height: 7.9rem;
+  display: flex;
+  align-items: center;
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.accountnotice-wED .auto-group-3nnr-any .title-sXB .title-czZ {
+  margin: 0rem 4.6rem 0.1rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #020000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.accountnotice-wED .auto-group-3nnr-any .title-sXB .auto-group-trkh-X5w {
+  width: 92.7rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  background-color: rgba(217, 217, 217, 0.5699999928);
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.accountnotice-wED .auto-group-3nnr-any .content-bLh {
+  box-sizing: border-box;
+  padding-top: 0.0768rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.accountnotice-wED .auto-group-3nnr-any .content-bLh .content-jSu {
+  margin-bottom: 1.9232rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.accountnotice-wED .auto-group-3nnr-any .content-bLh .auto-group-xjrb-3yP {
+  width: 100%;
+  height: 48.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1428571429;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  background-color: rgba(217, 217, 217, 0.5699999928);
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.accountnotice-wED .delete-tz1 {
+  margin: 0rem 7.95rem 0rem 109.2rem;
+  width: calc(100% - 117.15rem);
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.accountnotice-wED .delete-tz1 .vector-E2H {
+  margin-right: 1.05rem;
+  width: 6.1rem;
+  height: 6.8rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.accountnotice-wED .delete-tz1 .delete-Msb {
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1428571429;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}

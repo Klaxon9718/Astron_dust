@@ -34,12 +34,12 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     
-       // mybatis와 관련된 dependency (jdbc, mybatis)
+    // mybatis와 관련된 dependency (jdbc, mybatis)
     implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
     implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.0'
-    
-    	// gson라이브러리
+    // gson라이브러리
     implementation 'com.google.code.gson:gson:2.8.8'
+
 }
 
 tasks.named('test') {

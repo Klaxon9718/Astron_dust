@@ -1,0 +1,154 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+
+}.account-wTB {
+  box-sizing: border-box;
+  padding: 3.3rem 3.55rem 6.183rem 8.9rem;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/mypage_background.png');
+  background-color: #ffffff;
+}
+.account-wTB .auto-group-hpfj-TAd {
+  margin-bottom: 1.3053rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.account-wTB .auto-group-hpfj-TAd .name-nih {
+  margin-right: 79.05rem;
+  display: flex;
+  font-size: 10rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-wTB .auto-group-hpfj-TAd .auto-group-swhf-JBF {
+  margin-bottom: 2.5947rem;
+  width: 30.6rem;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.account-wTB .auto-group-hpfj-TAd .auto-group-swhf-JBF .log-out-SHT {
+  margin-bottom: 2.4rem;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration-line: underline;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-wTB .auto-group-hpfj-TAd .auto-group-swhf-JBF .delete-account-kJ9 {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration-line: underline;
+  color: #ffffff;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-wTB .scrollframe-4Zj {
+  margin-right: 4.5633rem;
+  box-sizing: border-box;
+  padding: 2.112rem 4.857rem 2.112rem 3.251rem;
+  width: 126.0085rem;
+  height: 78.9878rem;
+  background-color: rgba(217, 217, 217, 0.3199999928);
+  border-radius: 1.2rem;
+  flex-shrink: 0;
+}
+.account-wTB .scrollframe-4Zj .content1-mj3 {
+  box-sizing: border-box;
+  padding: 3.1rem 2.94rem 3rem 3.1rem;
+  width: 100%;
+  height: 10.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 254, 242, 0.7599999905);
+  border-radius: 1.2rem;
+}
+.account-wTB .scrollframe-4Zj .content1-mj3 .item-1-t2y {
+  margin: 0rem 30.15rem 0.2rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-wTB .scrollframe-4Zj .content1-mj3 .hello-everyone-BGy {
+  margin: 0.2rem 22.31rem 0rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-wTB .scrollframe-4Zj .content1-mj3 .witingdate-sfb {
+  margin: 0.131rem 6.1rem 0rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1428571429;
+  color: #000000;
+  font-family: Anonymous Pro, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.account-wTB .scrollframe-4Zj .content1-mj3 .close-nnZ {
+  margin-bottom: 0.0837rem;
+  width: 3.4rem;
+  height: 3.4rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}

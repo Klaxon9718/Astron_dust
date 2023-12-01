@@ -1,0 +1,180 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  
+}.login-3R5 {
+  align-items: flex-end;
+  background-color: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 5.7rem 3.4rem 30.161rem 6.2rem;
+  position: relative;
+  width: 100%;
+  background-image: url('../assets/login_background.png');
+}
+  .singup-N5y {
+    border-radius: 1.2rem;
+    cursor: pointer;
+    flex-shrink: 0;
+    height: 6.6rem;
+    margin: 0rem 2.3rem 26.8rem 0rem;
+    position: relative;
+    width: 11.1rem;
+}
+    .signup-Y2P {
+      color: #ffffff;
+      display: flex;
+      font-family: Anonymous Pro, 'Source Sans Pro';
+      font-size: 2.5rem;
+      font-weight: 700;
+      height: 2rem;
+      left: 0.85rem;
+      line-height: 0.8;
+      position: absolute;
+      top: 2.3rem;
+      white-space: nowrap;
+      width: 9.6rem;
+    }
+    .signuprectlogin-uX9 {
+      background-color: rgba(232, 232, 232, 0);
+      border: solid 0.5rem #e8e8e8;
+      border-radius: 1.2rem;
+      box-sizing: border-box;
+      height: 6.6rem;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 11.1rem;
+    }
+  
+  .auto-group-vnuz-yG7 {
+    align-items: flex-end;
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+  }
+    .auto-group-svjh-iUb {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      margin: 0rem 15.3rem 0.639rem 0rem;
+  }
+      .astrondust-3Ws {
+        color: #ffffff;
+        display: flex;
+        flex-shrink: 0;
+        font-family: Nova Cut, 'Source Sans Pro';
+        font-size: 20rem;
+        font-weight: 400;
+        line-height: 0.6;
+        margin-bottom: 3.4rem;
+        max-width: 63.7rem;
+      }
+      .atston-dust-5iT {
+        color: #bfbfbf;
+        display: flex;
+        flex-shrink: 0;
+        font-family: Anonymous Pro, 'Source Sans Pro';
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1;
+        margin: 0rem 0rem 1.1rem 0.2rem;
+        white-space: nowrap;
+      }
+      .you-can-see-many-constellations-and-talk-to-your-friends-9TR {
+        color: #bfbfbf;
+        display: flex;
+        flex-shrink: 0;
+        font-family: Anonymous Pro, 'Source Sans Pro';
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1;
+        margin-left: 0.2rem;
+        white-space: nowrap;
+      }
+    
+    .login-CRh {
+      align-items: flex-end;
+      border-radius: 1.2rem;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      padding: 0.619rem 0rem 0.619rem 0rem;
+      width: 53.9rem;
+    }
+      .login-GwM {
+        color: #ffffff;
+        display: flex;
+        flex-shrink: 0;
+        font-family: Anonymous Pro, 'Source Sans Pro';
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 0.8;
+        margin: 0rem 22.281rem 2.329rem 0rem;
+        white-space: nowrap;
+      }
+      .id-yas {
+        background-color: rgba(217, 217, 217, 0.349999994);
+        border-radius: 1.2rem;
+        box-sizing: border-box;
+        color: #ffffff;
+        display: flex;
+        flex-shrink: 0;
+        font-family: Anonymous Pro, 'Source Sans Pro';
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 0.8;
+        margin-bottom: 2.3392rem;
+        padding: 2.702rem 2.9rem 2.766rem 2.9rem;
+        white-space: nowrap;
+        width: 100%;
+      }
+      .password-yUP {
+        background-color: rgba(217, 217, 217, 0.349999994);
+        border-radius: 1.2rem;
+        box-sizing: border-box;
+        color: #ffffff;
+        display: flex;
+        flex-shrink: 0;
+        font-family: Anonymous Pro, 'Source Sans Pro';
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 0.8;
+        margin-bottom: 2.1974rem;
+        padding: 2.595rem 2.9rem 2.872rem 2.9rem;
+        white-space: nowrap;
+        width: 100%;
+      }
+      .sign-in-to-astron-dust-oCX {
+        color: #ffffff;
+        display: flex;
+        flex-shrink: 0;
+        font-family: Anonymous Pro, 'Source Sans Pro';
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 0.8;
+        margin-right: 2.1rem;
+        white-space: nowrap;
+      }
+    
+  
+
