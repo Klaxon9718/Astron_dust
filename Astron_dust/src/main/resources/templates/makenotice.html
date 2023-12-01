@@ -9,31 +9,70 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anonymous+Pro%3A700"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A700"/>
   <link rel="stylesheet" href="./styles/makenotice.css"/>
+  
+  <style>
+  button {
+  	background-color: transparent;
+  	border: none;
+  }
+  
+  .auto-group-sqab-Wn1 {
+        padding-left: 10px;
+   }
+   
+   .auto-group-vamy-qxh {
+        padding: 10px;
+   }
+   
+   /* 스크롤바의 전체 너비 */
+    ::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+    }
+
+    /* 스크롤바의 배경 */
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    /* 스크롤바의 핸들(움직이는 부분) */
+    ::-webkit-scrollbar-thumb {
+      background: #2a2452;
+      border-radius: 5px;
+    }
+
+    /* 스크롤바의 핸들 호버시(커서 올렸을 때) */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #3f3a5e;
+    }
+  </style>
 </head>
 <body>
 <div class="makenotice-fzM">
-  <div class="notice-board-zWq">
-    <span class="notice-board-zWq-sub-0">
+  <form action="/notice" method="post">
+  	<div class="notice-board-zWq">
+    <span class="notice-board-zWq-sub-1">
     notice
     <br/>
-    
-    </span>
-    <span class="notice-board-zWq-sub-1">board</span>
+    board</span>
   </div>
   <div class="auto-group-avix-xMB">
     <div class="title-THw">
       <div class="title-14Z">title</div>
-      <div class="auto-group-sqab-Wn1">Teacher Is BAD...</div>
+      <input type="text" name="title" class="auto-group-sqab-Wn1"required/>
     </div>
     <div class="content-BdF">
       <div class="content-j8y">content</div>
-      <div class="auto-group-vamy-qxh">so many homeworks....</div>
+      <textarea name="content" class="auto-group-vamy-qxh" required></textarea>
     </div>
   </div>
   <div class="savebox-V1f">
-    <div class="save-2GV">save</div>
-    <div class="saverect-84d">
-    </div>
+	  <button type="submit" class="saverect-84d">
+	  	 <div class="save-2GV">save</div>
+	  </button>	
   </div>
+  </form>
+
 </div>
 </body>
+</html>

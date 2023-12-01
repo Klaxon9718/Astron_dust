@@ -42,7 +42,7 @@ public class MyController {
         return "/goodbye";
     }
     
-    @GetMapping("/makenotice")
+    @GetMapping("/makenotice") //게시글 작성
     public String makenotice() {
         return "/makenotice";
     }
@@ -52,17 +52,13 @@ public class MyController {
         return "/nasapictures";
     }
     
-    @GetMapping("/noticeboard")
-    public String noticeboard() {
-        return "/noticeboard";
-    }
     
     @GetMapping("/observe")
     public String observe() {
         return "/observe";
     }
     
-    @GetMapping("/onecontent")
+    @GetMapping("/onecontent") //게시글 상세 보기
     public String onecontent() {
         return "/onecontent";
     }

@@ -155,9 +155,11 @@ body {
   width: 5.5rem;
   height: 2rem;
   position: absolute;
-  left: 3rem;
-  top: 2.2rem;
+  left: 2.5rem;
+  top: 1.8rem;
   display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 0.8;
