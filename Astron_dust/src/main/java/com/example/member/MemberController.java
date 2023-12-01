@@ -7,6 +7,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import jakarta.security.auth.message.callback.PrivateKeyCallback.Request;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
+
 @RestController
 public class MemberController {
 
@@ -37,10 +41,14 @@ public class MemberController {
     
     // 로그인
     @PostMapping("/login")
-    public ResponseEntity<?> login(@RequestParam("UID") String UID, @RequestParam("password") String password) {
+    public ResponseEntity<?> login(@RequestParam("UID") String UID, @RequestParam("password") String password, HttpServletRequest request) {
       try {
         boolean isAuthenticated = memberService.authenticate(UID, password);
         if (isAuthenticated) {
+        	// UID를 세션 생성
+        	HttpSession session = request.getSession();
+            session.setAttribute("UID", UID); 
+            // 로그인 성공 전달
           return new ResponseEntity<>(HttpStatus.OK);
         } else {
           return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
@@ -49,6 +57,9 @@ public class MemberController {
         return new ResponseEntity<>(Map.of("message", e.getMessage()), HttpStatus.BAD_REQUEST);
       }
     }
+    
+   
+
 
 
 }
