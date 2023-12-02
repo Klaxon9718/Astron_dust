@@ -95,6 +95,9 @@ body {
   flex-shrink: 0;
 }
 .account-wTB .scrollframe-4Zj .content1-mj3 {
+  position: relative;
+  z-index: 1;
+  pointer-events: auto;
   box-sizing: border-box;
   padding: 3.1rem 2.94rem 3rem 3.1rem;
   width: 100%;
@@ -104,6 +107,7 @@ body {
   align-items: center;
   background-color: rgba(255, 254, 242, 0.7599999905);
   border-radius: 1.2rem;
+  margin-top: 1rem;
 }
 .account-wTB .scrollframe-4Zj .content1-mj3 .item-1-t2y {
   margin: 0rem 30.15rem 0.2rem 0rem;

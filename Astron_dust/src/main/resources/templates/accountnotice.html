@@ -8,29 +8,29 @@
   <title>account_notice</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anonymous+Pro%3A700"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A700"/>
-  <link rel="stylesheet" href="./styles/accountnotice.css"/>
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles/accountnotice.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
 	<div th:replace="./header :: header"></div>
 	<section class="d-flex vh-100">
-<div class="accountnotice-wED">
-  <img class="vector-rry" src="./assets/back_vector.png"/>
-  <div class="auto-group-3nnr-any">
-    <div class="title-sXB">
-      <div class="title-czZ">title</div>
-      <div class="auto-group-trkh-X5w">Teacher Is BAD...</div>
-    </div>
-    <div class="content-bLh">
-      <div class="content-jSu">content</div>
-      <div class="auto-group-xjrb-3yP">so many homeworks....</div>
-    </div>
-  </div>
-  <div class="delete-tz1">
-    <img class="vector-E2H" src="./assets/trash.png"/>
-    <div class="delete-Msb">delete</div>
-  </div>
-</div>
-</section>
+	<div class="accountnotice-wED">
+	  <img class="vector-rry" src="/assets/back_vector.png"/>
+	  <div class="auto-group-3nnr-any">
+	    <div class="title-sXB">
+	      <div class="title-czZ">title</div>
+	      <div class="auto-group-trkh-X5w" th:text="${post.title}">Teacher Is BAD...</div>
+	    </div>
+	    <div class="content-bLh">
+	      <div class="content-jSu">content</div>
+	      <div class="auto-group-xjrb-3yP" th:text="${post.content}">so many homeworks....</div>
+	    </div>
+	  </div>
+	  <div class="delete-tz1">
+	    <img class="vector-E2H" src="/assets/trash.png"/>
+	    <div class="delete-Msb">delete</div>
+	  </div>
+	</div>
+	</section>
 </body>
+</html>

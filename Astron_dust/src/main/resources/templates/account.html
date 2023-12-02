@@ -25,12 +25,13 @@
     </div>
   </div>
   <div class="scrollframe-4Zj">
-    <div class="content1-mj3">
-      <div class="item-1-t2y">1</div>
-      <div class="hello-everyone-BGy">hello, everyone</div>
-      <div class="witingdate-sfb">2023.11.25</div>
-      <img class="close-nnZ" src="./assets/close.png"/>
-    </div>
+  <div class="content1-mj3" th:each="post, stat : ${posts}" th:onclick="'gotonext(\'' + ${post.seq} + '\')'">
+  <div class="item-1-t2y" th:text="${stat.count}">1</div>
+  <div class="hello-everyone-BGy" th:text="${post.title}">hello, everyone</div>
+  <div class="witingdate-sfb" th:text="${#dates.format(post.date, 'yyyy.MM.dd')}">2023.11.25</div>
+  <img class="close-nnZ" src="./assets/close.png"/>
+</div>
+
   </div>
 </div>
 
@@ -38,6 +39,17 @@
 function logout() {
     location.href = "/logout";
 }
+
+function deleteAccount(){
+	location.href = "/deleteaccount";
+}
+function gotonext(seq){
+    location.href = "/accountnotice/" + seq;
+}
+
+
+
+
 </script>
 </section>
 </body>
