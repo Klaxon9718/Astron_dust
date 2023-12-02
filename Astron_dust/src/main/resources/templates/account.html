@@ -13,8 +13,9 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
+
 	<div th:replace="./header :: header"></div>
-	
+	<section class="d-flex vh-100">
 <div class="account-wTB">
   <div class="auto-group-hpfj-TAd">
     <div class="name-nih" th:text="${UID}">NAME</div> <!-- 세션 값인 UID받아옴 -->
@@ -38,5 +39,5 @@ function logout() {
     location.href = "/logout";
 }
 </script>
-
+</section>
 </body>
