@@ -8,7 +8,7 @@
   <title>NASA_pictures</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anonymous+Pro%3A400%2C700"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C700"/>
-  <link rel="stylesheet" href="./styles/nasapictures.css"/>
+  <link rel="stylesheet" href="/styles/nasapictures.css"/>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
@@ -48,8 +48,11 @@
     </div>
 </div>
 
-<div class="pagenum-ncu" th:each="num : ${#numbers.sequence(1, apods.totalPages)}">
-<a th:href="@{/nasapictures/__${num}__}" class="item-1-X4h" th:text="${num}">1</a>
+<div class="pagenum-ncu">
+  <a th:each="num : ${#numbers.sequence(1, apods.totalPages)}" 
+     th:href="@{/nasapictures/__${num}__}" 
+     class="item-1-X4h" 
+     th:text="${num}">1</a>
 </div>
 
 </div>
