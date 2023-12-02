@@ -133,6 +133,9 @@ body {
   display: flex;
   align-items: flex-end;
   flex-shrink: 0;
+   cursor: pointer;
+   z-index: 1;
+  pointer-events: auto;
 }
 .accountnotice-wED .delete-tz1 .vector-E2H {
   margin-right: 1.05rem;
