@@ -3,6 +3,7 @@ package com.example.nasapic;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
@@ -10,6 +11,10 @@ import jakarta.servlet.http.HttpSession;
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 
 @Controller
 public class NasaApodController {
@@ -23,24 +28,47 @@ public class NasaApodController {
     @GetMapping("/nasapictures")
     public String getApodsForDateRange(HttpServletRequest request, Model model) {
         HttpSession session = request.getSession();
-        String UID = (String) session.getAttribute("UID"); // 세션에서 UID를 가져옵니다.
+        String UID = (String) session.getAttribute("UID");
 
-        // 세션 없을 경우
         if (UID == null) { 
             return "redirect:/login";
         }
 
-        model.addAttribute("UID", UID); // UID를 모델에 추가합니다. 이렇게 하면 뷰에서 UID를 사용할 수 있습니다.
+        model.addAttribute("UID", UID);
 
-        // 오늘의 NasaApod 데이터를 가져옵니다. 없다면 NASA API를 사용하여 가져옵니다.
+        Pageable pageable = PageRequest.of(0, 2);
+
         NasaApod apodToday = nasaApodService.getTodayApod();
 
-        // 데이터베이스에서 모든 NasaApod 데이터를 가져옵니다.
-        List<NasaApod> apods = nasaApodService.getAllApods();
+        Page<NasaApod> apods = nasaApodService.getAllApods(pageable);
 
-        model.addAttribute("apods", apods); // 모든 NasaApod 데이터를 모델에 추가합니다.
+        model.addAttribute("apods", apods);
 
         return "/nasapictures";
     }
+    
+    @GetMapping("/nasapictures/{page}")
+    public String getApodsForDateRangeWithPage(@PathVariable("page") int page, HttpServletRequest request, Model model) {
+        HttpSession session = request.getSession();
+        String UID = (String) session.getAttribute("UID");
+
+        if (UID == null) { 
+            return "redirect:/login";
+        }
+
+        model.addAttribute("UID", UID);
+
+        Pageable pageable = PageRequest.of(page - 1, 2);
+
+        NasaApod apodToday = nasaApodService.getTodayApod();
+
+        Page<NasaApod> apods = nasaApodService.getAllApods(pageable);
+
+        model.addAttribute("apods", apods);
+
+        return "/nasapictures";
+    }
+    
+    
 }
 

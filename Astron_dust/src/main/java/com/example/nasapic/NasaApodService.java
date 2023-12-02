@@ -9,6 +9,9 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+
 @Service
 public class NasaApodService {
 
@@ -40,9 +43,10 @@ public class NasaApodService {
         return apodToday;
     }
 
-    public List<NasaApod> getAllApods() {
-        return nasaApodRepository.findAll();
+    public Page<NasaApod> getAllApods(Pageable pageable) {
+        return nasaApodRepository.findAll(pageable);
     }
+
 
     public List<NasaApod> getApodsForDateRange() {
         LocalDate startDate = LocalDate.of(2023, 11, 1);

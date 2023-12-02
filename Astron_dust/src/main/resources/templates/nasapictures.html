@@ -47,8 +47,9 @@
         </div>
     </div>
 </div>
-<div class="pagenum-ncu" th:each="num : ${#numbers.sequence(1, apods.size() / 2)}">
-    <div class="item-1-X4h" th:text="${num}">1</div>
+
+<div class="pagenum-ncu" th:each="num : ${#numbers.sequence(1, apods.totalPages)}">
+<a th:href="@{/nasapictures/__${num}__}" class="item-1-X4h" th:text="${num}">1</a>
 </div>
 
 </div>
