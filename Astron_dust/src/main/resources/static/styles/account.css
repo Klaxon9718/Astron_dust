@@ -29,14 +29,13 @@ body {
 }
 .account-wTB .auto-group-hpfj-TAd {
   margin-bottom: 1.3053rem;
-  margin-left: 50rem;
   width: 100%;
-  display: flex;
+   display: flex;
+  justify-content: space-between;
   align-items: flex-end;
   flex-shrink: 0;
 }
 .account-wTB .auto-group-hpfj-TAd .name-nih {
-  margin-right: 60rem;
   display: flex;
   font-size: 10rem;
   font-weight: 700;
@@ -45,10 +44,14 @@ body {
   font-family: Anonymous Pro, 'Source Sans Pro';
   white-space: nowrap;
   flex-shrink: 0;
+  
+  max-width: 1300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .account-wTB .auto-group-hpfj-TAd .auto-group-swhf-JBF {
   margin-bottom: 2.5947rem;
-  margin-left: 30rem;
   width: 30.6rem;
   align-items: flex-end;
   display: flex;
