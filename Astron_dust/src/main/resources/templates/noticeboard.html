@@ -47,8 +47,13 @@
   <div th:each="notice : ${notices}" class="content1-qZX"> <!-- model에 추가된 notices리스트를 순회 -->
   <div class="item-1-wcZ" style="width: 35px; overflow: hidden; text-overflow: ellipsis;" th:text="${notice.seq}"></div>
   <div class="teacher-Ebf" style="width: 100px; overflow: hidden; text-overflow: ellipsis;" th:text="${notice.writer}"></div>
-  <div class="hello-everyone-9id" style="width: 310px; overflow: hidden; text-overflow: ellipsis;" th:text="${notice.title}"></div>
+  <div class="hello-everyone-9id" style="width: 310px; overflow: hidden; text-overflow: ellipsis; " th:text="${notice.title}"></div>
   <div class="witingdate-rN9" style="width: 200px; overflow: hidden; text-overflow: ellipsis;" th:text="${#dates.format(notice.date,'yyyy.MM.dd')}"></div>
 </div>
+<div class="pagenum-LnR">
+    <div class="item-1-4iR">1</div>
+    <div class="item-2-bTT">2</div>
+    <div class="item-3-Xc1">3</div>
+  </div>
 </div>
 </body>

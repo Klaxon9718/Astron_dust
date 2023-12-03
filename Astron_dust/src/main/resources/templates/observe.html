@@ -27,12 +27,16 @@
        
         #sendmessage {
 		  white-space: normal !important;
+		  word-break: break-all !important;
 		  text-align: left;
 		  padding: 3.45rem 2.1rem 3.85rem 2.1rem;
 		  margin-top: -25px;
 		}
 		
 		#receivemessage{
+		    white-space: normal !important;
+		    word-break: break-all !important;
+			text-align: left;
 			margin-bottom: 60px;
 			margin-top: -45px;
 		}
@@ -69,6 +73,13 @@
 	    ::-webkit-scrollbar-thumb:hover {
 	      background: #3f3a5e;
 	    }
+	    
+	    .hello-zrR{
+		    overflow-wrap: break-word !important;
+		    word-wrap: break-word !important;
+		    white-space: normal !important;
+		}
+		
 		
     </style>
 
@@ -92,11 +103,13 @@
   </div>
 </div>
 
-	<script>
+	<script th:inline="javascript">
 		// 서버와의 WebSocket 연결 생성
 		var socket = new WebSocket("ws://localhost:8080/ws/chat");
 		
-		var userId = prompt("아이디를 입력해주세요.");
+		/*<![CDATA[*/
+	    var userId = /*[[${UID}]]*/ 'UID';
+	    /*]]>*/
 		
 		socket.onopen = function(event) {
 		    console.log("WebSocket is open now.");
@@ -125,7 +138,7 @@
 		        chatArea = document.createElement('div');
 		        chatArea.className = 'get2-2FP';
 		        chatArea.id = 'receivemessage';
-
+		        
 		        var rectDiv = document.createElement('div');
 		        rectDiv.className = 'getrect-8ZK';
 		        chatArea.appendChild(rectDiv);
@@ -137,7 +150,11 @@
 
 		        var senderDiv = document.createElement('div');
 		        senderDiv.className = 'julia-3Zo';
-		        senderDiv.textContent = message.sender;
+		        if (message.sender.length > 10) {
+		            senderDiv.textContent = message.sender.substr(0, 10) + "...";
+		        } else {
+		            senderDiv.textContent = message.sender;
+		        }
 		        chatArea.appendChild(senderDiv);
 			}
 			

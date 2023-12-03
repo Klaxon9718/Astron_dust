@@ -98,7 +98,7 @@ body {
   flex-shrink: 0;
 }
 .noticeboard-fSm .descript-eLd .no-mRF {
-  margin: 1rem 8.8rem 0rem 0rem;
+  margin: 1rem 8.8rem 0rem 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,7 +111,7 @@ body {
   flex-shrink: 0;
 }
 .noticeboard-fSm .descript-eLd .writer-fmX {
-  margin: 1rem 30.2rem 0rem 0rem;
+  margin: 1rem 30.2rem 0rem 1rem;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -39,7 +39,8 @@ public class WebSocketChatHandler extends TextWebSocketHandler{
 						MessageModel joinMsg = new MessageModel();
 						joinMsg.setType("JOIN");
 						joinMsg.setSender("server");
-						joinMsg.setText(msg.getUserId() + "님이 입장하셨습니다.");
+						String displayName = msg.getUserId().length() > 6 ? msg.getUserId().substring(0, 6) + "..." : msg.getUserId();
+						joinMsg.setText(displayName + "님이 입장하셨습니다.");
 						String joinMsgJson = new Gson().toJson(joinMsg);
 						webSocketSession.sendMessage(new TextMessage(joinMsgJson));
 					}

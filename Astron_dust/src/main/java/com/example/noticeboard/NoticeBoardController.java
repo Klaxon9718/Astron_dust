@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
+
 @Controller
 public class NoticeBoardController {
 	private final NoticeBoardService noticeBoardService;
@@ -18,10 +21,12 @@ public class NoticeBoardController {
 	}
 	
 	@PostMapping("/notice")
-	public String postNotice(@RequestParam(name = "title") String title, 
+	public String postNotice(HttpServletRequest request, @RequestParam(name = "title") String title, 
             @RequestParam(name = "content") String content) {
-		System.out.println("postNotice호출됨");
-		noticeBoardService.insertNotice("작성자", title, content);
+		HttpSession session = request.getSession();
+	    String UID = (String) session.getAttribute("UID");
+	    
+		noticeBoardService.insertNotice(UID, title, content);
 		return "redirect:/noticeboard";
 	}
 	
