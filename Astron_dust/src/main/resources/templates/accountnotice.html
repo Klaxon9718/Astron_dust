@@ -49,6 +49,18 @@ function savePost(seq) {
         return;
     }
     
+ // title과 content 값이 제대로 설정되었는지 확인
+    if (title.trim() === "" || content.trim() === "") {
+        Swal.fire({
+            title: '입력 오류',
+            text: "제목과 내용을 모두 입력해주세요",
+            icon: 'warning',
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: '확인'
+        });
+        return;
+    }
+    
     $.ajax({
         url: '/savePost/' + seq,
         type: 'POST',

@@ -13,7 +13,7 @@
 <body>
 <div class="goodbye-EbF">
   <div class="auto-group-u3vs-Mfs">GOOD BYE</div>
-  <div class="joinbox-q5F">
+  <div class="joinbox-q5F" onclick="deleteSession()">
     <div class="jointxt-Zmw">
     go to
     <br/>
@@ -21,6 +21,22 @@
     </div>
     <div class="joinrect-gLm">
     </div>
-  </div>
 </div>
+</div>
+
+<script>
+function deleteSession() {
+  fetch('/deleteSession', {
+    method: 'POST',
+  })
+  .then(response => {
+    if (response.ok) {
+      window.location.href = '/login';
+    } else {
+      alert('세션 삭제 실패');
+    }
+  });
+}
+</script>
+
 </body>

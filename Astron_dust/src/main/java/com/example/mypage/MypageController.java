@@ -1,7 +1,10 @@
 package com.example.mypage;
 
+import com.example.member.Member;
+import com.example.member.MemberRepository;
 import com.example.noticeboard.NoticeBoardModel;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,6 +25,8 @@ public class MypageController {
     private MypageService mypageService;
     @Autowired
     private MypageRepository mypageRepository; 
+    @Autowired
+    private MemberRepository memberRepository;
 
     @GetMapping("/account")
     public String account(HttpServletRequest request, Model model) {
@@ -76,5 +81,29 @@ public class MypageController {
 
         return ResponseEntity.ok().build();
     }
+    
+    
+    @PostMapping("/deleteAccount")
+    public ResponseEntity<?> deleteAccount(HttpServletRequest request, @RequestBody Map<String, String> payload) {
+        HttpSession session = request.getSession();
+        String UID = (String) session.getAttribute("UID"); 
+        String password = payload.get("password"); 
+
+        Member member = memberRepository.findById(UID).orElse(null); 
+        if (member != null && member.getPassword().equals(password)) { 
+            memberRepository.delete(member); 
+            return ResponseEntity.ok().build();
+        } else {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
+        }
+    }
+    
+    @PostMapping("/deleteSession")
+    public ResponseEntity<?> deleteSession(HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        session.invalidate(); // 세션 삭제
+        return ResponseEntity.ok().build();
+    }
+    
 
 }
