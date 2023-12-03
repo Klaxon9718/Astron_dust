@@ -8,10 +8,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 public class MypageController {
@@ -53,6 +56,24 @@ public class MypageController {
     @DeleteMapping("/deletePost/{seq}")
     public ResponseEntity<?> deletePost(@PathVariable("seq") Integer seq) {
         mypageRepository.deleteById(seq);
+        return ResponseEntity.ok().build();
+    }
+    
+    @PostMapping("/savePost/{seq}")
+    public ResponseEntity<?> savePost(@PathVariable("seq") Integer seq, @RequestBody Map<String, String> payload) {
+        NoticeBoardModel post = mypageRepository.findById(seq).orElse(null);
+        // 게시글이 존재하지 않을 경우
+        if (post == null) {
+            return ResponseEntity.notFound().build();
+        }
+
+        // 게시글 정보 수정
+        post.setTitle(payload.get("title"));
+        post.setContent(payload.get("content"));
+
+        // 게시글 저장
+        mypageRepository.save(post);
+
         return ResponseEntity.ok().build();
     }
 
