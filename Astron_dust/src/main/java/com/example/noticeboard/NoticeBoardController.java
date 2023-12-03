@@ -1,8 +1,9 @@
 package com.example.noticeboard;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -31,9 +32,11 @@ public class NoticeBoardController {
 	}
 	
 	@GetMapping("/noticeboard")
-    public String getAllNotices(Model model) { // model : controller와 view사이의 데이터 교환을 담당하는 객체
-		List<NoticeBoardModel> notices = noticeBoardService.getAllNotices();
-        model.addAttribute("notices", notices);
+    public String getAllNotices(Model model, @RequestParam(name = "page", defaultValue = "0") int page) { // model : controller와 view사이의 데이터 교환을 담당하는 객체
+		Pageable pageable = PageRequest.of(page, 8);
+		Page<NoticeBoardModel> noticePage = noticeBoardService.getNotices(pageable);
+		model.addAttribute("notices", noticePage.getContent());
+        model.addAttribute("maxPage", noticePage.getTotalPages());
         return "/noticeboard";
     }
 }

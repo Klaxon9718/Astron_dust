@@ -18,6 +18,7 @@ body {
   box-sizing: border-box;
   padding: 4.2rem 5rem 9.9rem 6.15rem;
   width: 100%;
+  min-height: 1500px;
   overflow: hidden;
   position: relative;
   align-items: center;
@@ -161,7 +162,7 @@ body {
   flex-shrink: 0;
 }
 .noticeboard-fSm .content1-qZX .item-1-wcZ {
-  margin: 0rem 10.05rem 0.2rem 0rem;
+  margin: 0rem 8rem 0.2rem 0rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -174,7 +175,7 @@ body {
   flex-shrink: 0;
 }
 .noticeboard-fSm .content1-qZX .teacher-Ebf {
-  margin: 0.2rem 20.9rem 0rem 0rem;
+  margin: 0.2rem 13rem 0rem 0rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -402,9 +403,8 @@ body {
   flex-shrink: 0;
 }
 .noticeboard-fSm .pagenum-LnR {
-  margin: 0rem 30rem 0rem 56.8rem;
-  width: calc(100% - 113.85rem);
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-shrink: 0;
 }
