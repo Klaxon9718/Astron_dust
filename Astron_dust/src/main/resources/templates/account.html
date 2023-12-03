@@ -29,7 +29,7 @@
   <div class="item-1-t2y" th:text="${stat.count}">1</div>
   <div class="hello-everyone-BGy" th:text="${post.title}">hello, everyone</div>
   <div class="witingdate-sfb" th:text="${#dates.format(post.date, 'yyyy.MM.dd')}">2023.11.25</div>
-  <img class="close-nnZ" src="./assets/close.png"/>
+  <img class="close-nnZ" src="./assets/close.png" th:onclick="'deletePost(\'' + ${post.seq} + '\')'"/>
 </div>
 
   </div>
@@ -46,7 +46,16 @@ function deleteAccount(){
 function gotonext(seq){
     location.href = "/accountnotice/" + seq;
 }
-
+function deletePost(seq) {
+    fetch('/deletePost/' + seq, { method: 'DELETE' })
+        .then(response => {
+            if(response.ok) {
+                location.reload();  // 페이지를 새로 고침하여 변경 사항을 반영
+            } else {
+                alert('게시물 삭제에 실패하였습니다.');
+            }
+        });
+}
 
 
 
