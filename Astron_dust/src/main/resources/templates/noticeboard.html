@@ -58,9 +58,9 @@
   </div>
   
   <div class="parent-container">
-  <div th:each="notice : ${notices}" class="content1-qZX"> <!-- model에 추가된 notices리스트를 순회 -->
-  <div class="item-1-wcZ" style="width: 50px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block;" th:text="${notice.seq}"></div>
-  <div class="teacher-Ebf" style="width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block;" th:text="${notice.writer}"></div>
+  <div th:each="notice : ${notices}" class="content1-qZX" th:onclick="'goToContent(\'' + ${notice.seq} + '\')'"> <!-- model에 추가된 notices리스트를 순회 -->
+  <div class="item-1-wcZ" style="width: 60px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block;" th:text="${notice.seq}"></div>
+  <div class="teacher-Ebf" style="width: 190px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block;" th:text="${notice.writer}"></div>
   <div class="hello-everyone-9id" style="width: 310px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block;" th:text="${notice.title}"></div>
   <div class="witingdate-rN9" style="width: 200px; overflow: hidden; text-overflow: ellipsis; " th:text="${#dates.format(notice.date,'yyyy.MM.dd')}"></div>
 </div>
@@ -73,4 +73,11 @@
 	</div>
 	</div>
 </div>
+
+<script>
+  function goToContent(noticeSeq) {
+    // noticeId를 이용하여 onecontent.html로 이동하는 로직 작성
+    window.location.href = '/onecontent?noticeSeq=' + noticeSeq;
+  }
+</script>
 </body>

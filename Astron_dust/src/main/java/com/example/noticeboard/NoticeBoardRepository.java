@@ -12,6 +12,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 // - 첫번째 : Entity클래스를 지정, 두번째 : 기본 키의 타입을 지정
 // 이 인터페이스를 서비스 클래스나 컨트롤러에서 주입받아 사용하면, 복잡한 Sql 쿼리 없이도 DB작업을 수행할 수 있다.
 public interface NoticeBoardRepository extends JpaRepository<NoticeBoardModel, Integer>{
-	Page<NoticeBoardModel> findAll(Pageable pageable);
 	// Page타입을 반환하는 메서드
+	Page<NoticeBoardModel> findAll(Pageable pageable);
+	
+	// 해당 seq로 데이터 찾는 메서드
+	NoticeBoardModel findBySeq(int noticeSeq);
 }

@@ -1,5 +1,8 @@
 package com.example.noticeboard;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -39,4 +42,17 @@ public class NoticeBoardController {
         model.addAttribute("maxPage", noticePage.getTotalPages());
         return "/noticeboard";
     }
+	
+	@GetMapping("/onecontent")
+	public String getChoiceNotices(Model model, @RequestParam(name = "noticeSeq") int noticeSeq) {
+		NoticeBoardModel noticeBoardModel = noticeBoardService.getNoticeBySeq(noticeSeq);
+		model.addAttribute("title", noticeBoardModel.getTitle());
+		model.addAttribute("content", noticeBoardModel.getContent());
+		//날짜 형식 변환
+		Date date = noticeBoardModel.getDate();
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy.MM.dd.HH.mm");
+		String formattedDate = formatter.format(date);
+		model.addAttribute("date", formattedDate);
+		return "/onecontent";
+	}
 }

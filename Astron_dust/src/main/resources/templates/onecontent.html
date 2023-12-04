@@ -11,6 +11,18 @@
   <link rel="stylesheet" href="./styles/onecontent.css"/>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<style>
+  .title-83w{
+  	padding: 10px !important;
+  	overflow-x: auto !important;
+  	padding-top: 40px !important;
+  }
+  
+  ::-webkit-scrollbar {
+	      width: 0px;
+   }
+</style>
 </head>
 <body>
 	<div th:replace="./header :: header"></div>
@@ -24,31 +36,24 @@
     <span class="notice-board-tms-sub-1">board</span>
   </div>
   <div class="auto-group-p8y1-rcD">
-    <div class="title-83w">hello, everyone</div>
+    <div class="title-83w" th:text="${title}"></div>
     <div class="content-CZb">
       <div class="auto-group-g3q5-MSV">
         <div class="content-HL9">content</div>
-        <div class="witingdate-11F">2023.11.25</div>
+        <div class="witingdate-11F" th:text="${date}"></div>
       </div>
       <div class="auto-group-hchy-v8D">
-        <div class="there-is-new-homework-added-do-it-by-tomorrow-its-not-difficult-you-can-do-it-try-your-best-RKs">
-        There is new homework added.
-        <br/>
-         Do it by tomorrow. 
-        <br/>
-        It’s not difficult.
-        <br/>
-        
-        <br/>
-        You can do it. Try your best.
+        <div class="there-is-new-homework-added-do-it-by-tomorrow-its-not-difficult-you-can-do-it-try-your-best-RKs" th:text="${content}">
         </div>
       </div>
     </div>
   </div>
+  <a href="/noticeboard">
   <div class="savebox-BTT">
     <div class="save-K3s">back</div>
     <div class="saverect-2DB">
     </div>
   </div>
+  </a>
 </div>
 </body>

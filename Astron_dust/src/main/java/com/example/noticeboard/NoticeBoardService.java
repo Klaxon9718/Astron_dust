@@ -34,4 +34,9 @@ public class NoticeBoardService {
 	public Page<NoticeBoardModel> getNotices(Pageable pageable) {
         return repository.findAll(pageable);
     }
+	
+	// noticeSeq로 게시글 조회
+    public NoticeBoardModel getNoticeBySeq(int noticeSeq) {
+        return repository.findBySeq(noticeSeq);
+    }
 }
