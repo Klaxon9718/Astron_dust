@@ -50,7 +50,7 @@ public class NoticeBoardController {
 		model.addAttribute("content", noticeBoardModel.getContent());
 		//날짜 형식 변환
 		Date date = noticeBoardModel.getDate();
-		SimpleDateFormat formatter = new SimpleDateFormat("yyyy.MM.dd.HH.mm");
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy.MM.dd.HH:mm");
 		String formattedDate = formatter.format(date);
 		model.addAttribute("date", formattedDate);
 		return "/onecontent";
