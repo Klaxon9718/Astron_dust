@@ -45,6 +45,12 @@ public class NasaApodService {
             }
         }
 
+        // 디비가 비어있는 경우, 2023년 11월 1일부터 어제까지의 사진을 가져옴
+        if (nasaApodRepository.count() == 0) {
+            getApodsForDateRange(today.minusDays(1)); // '오늘' 대신 '어제'를 전달
+            apodToday = nasaApodRepository.findTopByOrderByDateDesc();
+        }
+
         return apodToday;
     }
 
@@ -54,9 +60,8 @@ public class NasaApodService {
     }
 
 
-    public List<NasaApod> getApodsForDateRange() {
+    public List<NasaApod> getApodsForDateRange(LocalDate endDate) { // 'endDate' 파라미터 추가
         LocalDate startDate = LocalDate.of(2023, 11, 1);
-        LocalDate endDate = LocalDate.now();
 
         List<NasaApod> apods = new ArrayList<>();
 
