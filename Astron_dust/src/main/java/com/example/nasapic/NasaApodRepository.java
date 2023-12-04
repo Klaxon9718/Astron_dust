@@ -10,4 +10,5 @@ public interface NasaApodRepository extends JpaRepository<NasaApod, Long> {
     
     NasaApod findByDate(LocalDate date);
 
+    NasaApod findTopByOrderByDateDesc();
 }

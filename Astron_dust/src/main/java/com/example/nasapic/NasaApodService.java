@@ -29,19 +29,25 @@ public class NasaApodService {
         NasaApod apodToday = nasaApodRepository.findByDate(today);
 
         if (apodToday == null) {
-            String formattedDate = today.format(DateTimeFormatter.ISO_DATE);
-            String apiUrl = "https://api.nasa.gov/planetary/apod?api_key=" + apiKey + "&date=" + formattedDate;
+            try {
+                String formattedDate = today.format(DateTimeFormatter.ISO_DATE);
+                String apiUrl = "https://api.nasa.gov/planetary/apod?api_key=" + apiKey + "&date=" + formattedDate;
 
-            RestTemplate restTemplate = new RestTemplate();
-            apodToday = restTemplate.getForObject(apiUrl, NasaApod.class);
+                RestTemplate restTemplate = new RestTemplate();
+                apodToday = restTemplate.getForObject(apiUrl, NasaApod.class);
 
-            if (apodToday != null) {
-                nasaApodRepository.save(apodToday);
+                if (apodToday != null) {
+                    nasaApodRepository.save(apodToday);
+                }
+            } catch (Exception e) {
+                // API 호출에 실패했을 경우, 디비에 저장된 최신 사진을 반환
+                apodToday = nasaApodRepository.findTopByOrderByDateDesc();
             }
         }
 
         return apodToday;
     }
+
 
     public Page<NasaApod> getAllApods(Pageable pageable) {
         return nasaApodRepository.findAll(pageable);
