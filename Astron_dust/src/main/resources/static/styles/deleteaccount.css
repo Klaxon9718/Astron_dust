@@ -24,6 +24,15 @@ body {
   background-image: url('../assets/delete_account_background.png');
   background-color: #ffffff;
 }
+.deleteaccount-2Vs .vector-rry {
+  margin: 2.5rem 127.8rem 0rem 10rem;
+  width: 8rem;
+  height: 5.6rem;
+  cursor: pointer;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
 .deleteaccount-2Vs .backrect-a1b {
   width: 125.2rem;
   height: 80.2rem;

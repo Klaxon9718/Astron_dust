@@ -8,29 +8,85 @@
   <title>account_notice</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anonymous+Pro%3A700"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A700"/>
-  <link rel="stylesheet" href="./styles/accountnotice.css"/>
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles/accountnotice.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 	<div th:replace="./header :: header"></div>
+	<section class="d-flex vh-100">
+	<div class="accountnotice-wED">
 	
-<div class="accountnotice-wED">
-  <img class="vector-rry" src="./assets/back_vector.png"/>
-  <div class="auto-group-3nnr-any">
-    <div class="title-sXB">
-      <div class="title-czZ">title</div>
-      <div class="auto-group-trkh-X5w">Teacher Is BAD...</div>
-    </div>
-    <div class="content-bLh">
-      <div class="content-jSu">content</div>
-      <div class="auto-group-xjrb-3yP">so many homeworks....</div>
-    </div>
-  </div>
-  <div class="delete-tz1">
-    <img class="vector-E2H" src="./assets/trash.png"/>
-    <div class="delete-Msb">delete</div>
-  </div>
+	<a href="/account">
+    <img class="vector-rry" src="/assets/back_vector.png"/>
+	</a>
+
+	  <div class="auto-group-3nnr-any">
+	    <div class="title-sXB">
+  <div class="title-czZ">title</div>
+  <input class="auto-group-trkh-X5w" th:value="${post.title}" />
+</div>
+	    <div class="content-bLh">
+  <div class="content-jSu">content</div>
+  <textarea class="auto-group-xjrb-3yP" rows="4" cols="50" th:text="${post.content}"></textarea>
+</div>
+	  </div>
+<div class="delete-tz1" data-seq="${post.seq}" th:onclick="'savePost(\''+ ${post.seq} + '\')'">
+    <div class="delete-Msb">save</div>
 </div>
 
+	</div>
+	</section>
+<script>
+function savePost(seq) {
+    var title = $('.auto-group-trkh-X5w').val();
+    var content = $('.auto-group-xjrb-3yP').val();
+
+    // seq 값이 제대로 설정되었는지 확인
+    if (seq === undefined) {
+        console.error('seq 값이 설정되지 않았습니다.');
+        return;
+    }
+    
+ // title과 content 값이 제대로 설정되었는지 확인
+    if (title.trim() === "" || content.trim() === "") {
+        Swal.fire({
+            title: '입력 오류',
+            text: "제목과 내용을 모두 입력해주세요",
+            icon: 'warning',
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: '확인'
+        });
+        return;
+    }
+    
+    $.ajax({
+        url: '/savePost/' + seq,
+        type: 'POST',
+        data: JSON.stringify({
+            'title': title,
+            'content': content
+        }),
+        contentType: 'application/json; charset=utf-8',
+        success: function(result) {
+            Swal.fire({
+                title: '게시글 저장',
+                text: "게시글이 수정되었습니다",
+                icon: 'success',
+                confirmButtonColor: '#3085d6',
+                confirmButtonText: '확인'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // 확인 버튼 클릭 후 account 페이지로 이동
+                    window.location.href = "/account";
+                }
+            });
+        }
+    });
+}
+</script>	
+
+
 </body>
+</html>

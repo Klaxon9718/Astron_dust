@@ -37,22 +37,6 @@ public class MyController {
         model.addAttribute("UID", UID); // UID를 모델에 추가합니다. 이렇게 하면 뷰에서 UID를 사용할 수 있습니다.
         return "/main"; // main 뷰를 반환합니다.
     }
-
-    
-    
-    @GetMapping("/account")
-    public String account(HttpServletRequest request, Model model) {
-        HttpSession session = request.getSession();
-        String UID = (String) session.getAttribute("UID"); // 세션에서 UID를 가져옵니다.
-
-        // 세션 없을 경우
-        if (UID == null) { 
-            return "redirect:/login";
-        }
-
-        model.addAttribute("UID", UID); // UID를 모델에 추가합니다. 이렇게 하면 뷰에서 UID를 사용할 수 있습니다.
-        return "/account"; 
-    }
     
     
     

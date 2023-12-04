@@ -13,23 +13,26 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
+
 	<div th:replace="./header :: header"></div>
-	
+	<section class="d-flex vh-100">
 <div class="account-wTB">
   <div class="auto-group-hpfj-TAd">
     <div class="name-nih" th:text="${UID}">NAME</div> <!-- 세션 값인 UID받아옴 -->
     <div class="auto-group-swhf-JBF">
       <div class="log-out-SHT" onclick="logout()">log out</div>
-      <div class="delete-account-kJ9">delete account</div>
+      <div class="delete-account-kJ9" onclick="deleteAccount()">delete account</div>
     </div>
   </div>
+  
   <div class="scrollframe-4Zj">
-    <div class="content1-mj3">
-      <div class="item-1-t2y">1</div>
-      <div class="hello-everyone-BGy">hello, everyone</div>
-      <div class="witingdate-sfb">2023.11.25</div>
-      <img class="close-nnZ" src="./assets/close.png"/>
-    </div>
+  <div class="content1-mj3 d-flex align-items-center" th:each="post, stat : ${posts}" th:onclick="'gotonext(\'' + ${post.seq} + '\')'">
+  <div class="item-1-t2y" th:text="${stat.count}">1</div>
+  <div class="hello-everyone-BGy" th:text="${post.title}">hello, everyone</div>
+  <div class="witingdate-sfb ml-auto" th:text="${#dates.format(post.date, 'yyyy.MM.dd')}">2023.11.25</div>
+  <img class="close-nnZ" src="./assets/close.png" th:onclick="'deletePost(\'' + ${post.seq} + '\')'"/>
+</div>
+
   </div>
 </div>
 
@@ -37,6 +40,26 @@
 function logout() {
     location.href = "/logout";
 }
-</script>
 
+function deleteAccount(){
+	location.href = "/deleteaccount";
+}
+function gotonext(seq){
+    location.href = "/accountnotice/" + seq;
+}
+function deletePost(seq) {
+    fetch('/deletePost/' + seq, { method: 'DELETE' })
+        .then(response => {
+            if(response.ok) {
+                location.reload();  // 페이지를 새로 고침하여 변경 사항을 반영
+            } else {
+                alert('게시물 삭제에 실패하였습니다.');
+            }
+        });
+}
+
+
+
+</script>
+</section>
 </body>

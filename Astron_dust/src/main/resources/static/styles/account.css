@@ -30,12 +30,12 @@ body {
 .account-wTB .auto-group-hpfj-TAd {
   margin-bottom: 1.3053rem;
   width: 100%;
-  display: flex;
+   display: flex;
+  justify-content: space-between;
   align-items: flex-end;
   flex-shrink: 0;
 }
 .account-wTB .auto-group-hpfj-TAd .name-nih {
-  margin-right: 79.05rem;
   display: flex;
   font-size: 10rem;
   font-weight: 700;
@@ -44,6 +44,11 @@ body {
   font-family: Anonymous Pro, 'Source Sans Pro';
   white-space: nowrap;
   flex-shrink: 0;
+  
+  max-width: 1300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .account-wTB .auto-group-hpfj-TAd .auto-group-swhf-JBF {
   margin-bottom: 2.5947rem;
@@ -55,6 +60,7 @@ body {
 }
 .account-wTB .auto-group-hpfj-TAd .auto-group-swhf-JBF .log-out-SHT {
   margin-bottom: 2.4rem;
+  margin-left: 180rem;
   width: 100%;
   cursor: pointer;
   display: flex;
@@ -72,6 +78,7 @@ body {
 .account-wTB .auto-group-hpfj-TAd .auto-group-swhf-JBF .delete-account-kJ9 {
   width: 100%;
   cursor: pointer;
+  margin-left: 180rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,8 +100,28 @@ body {
   background-color: rgba(217, 217, 217, 0.3199999928);
   border-radius: 1.2rem;
   flex-shrink: 0;
+  
+  align-items: flex-start;
+  overflow-y: auto; /* 수직 스크롤 */
+  max-height: 800px; /* 최대 높이 설정 */
+  
 }
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #2f3542;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+  }
 .account-wTB .scrollframe-4Zj .content1-mj3 {
+  position: relative;
+  z-index: 1;
+  pointer-events: auto;
   box-sizing: border-box;
   padding: 3.1rem 2.94rem 3rem 3.1rem;
   width: 100%;
@@ -104,9 +131,10 @@ body {
   align-items: center;
   background-color: rgba(255, 254, 242, 0.7599999905);
   border-radius: 1.2rem;
+  margin-top: 1rem;
 }
 .account-wTB .scrollframe-4Zj .content1-mj3 .item-1-t2y {
-  margin: 0rem 30.15rem 0.2rem 0rem;
+  margin: 0rem 5rem 0.2rem 0rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,10 +147,8 @@ body {
   flex-shrink: 0;
 }
 .account-wTB .scrollframe-4Zj .content1-mj3 .hello-everyone-BGy {
-  margin: 0.2rem 22.31rem 0rem 0rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0.2rem 0rem 0rem 0rem;
+  display: flex;  
   font-size: 3.5rem;
   font-weight: 400;
   line-height: 1.1428571429;
@@ -130,9 +156,15 @@ body {
   font-family: Anonymous Pro, 'Source Sans Pro';
   white-space: nowrap;
   flex-shrink: 0;
+  
+  max-width: 760px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .account-wTB .scrollframe-4Zj .content1-mj3 .witingdate-sfb {
   margin: 0.131rem 6.1rem 0rem 0rem;
+  margin-left: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,6 +177,8 @@ body {
   flex-shrink: 0;
 }
 .account-wTB .scrollframe-4Zj .content1-mj3 .close-nnZ {
+  position: relative;
+  z-index: 2;
   margin-bottom: 0.0837rem;
   width: 3.4rem;
   height: 3.4rem;

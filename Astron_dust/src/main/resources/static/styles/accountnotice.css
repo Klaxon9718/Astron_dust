@@ -73,7 +73,7 @@ body {
   flex-shrink: 0;
 }
 .accountnotice-wED .auto-group-3nnr-any .title-sXB .auto-group-trkh-X5w {
-  width: 92.7rem;
+  width: 118rem;
   height: 100%;
   display: flex;
   align-items: center;
@@ -128,11 +128,14 @@ body {
   flex-shrink: 0;
 }
 .accountnotice-wED .delete-tz1 {
-  margin: 0rem 7.95rem 0rem 109.2rem;
+  margin: 0rem 30rem 0rem 160rem;
   width: calc(100% - 117.15rem);
   display: flex;
   align-items: flex-end;
   flex-shrink: 0;
+   cursor: pointer;
+   z-index: 1;
+  pointer-events: auto;
 }
 .accountnotice-wED .delete-tz1 .vector-E2H {
   margin-right: 1.05rem;
@@ -147,7 +150,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3.5rem;
+  font-size: 5.5rem;
   font-weight: 700;
   line-height: 1.1428571429;
   color: #ffffff;
