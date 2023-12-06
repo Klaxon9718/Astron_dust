@@ -45,11 +45,10 @@ public class NasaApodService {
             }
         }
 
-        // 디비가 비어있는 경우, 2023년 11월 1일부터 어제까지의 사진을 가져옴
-//        if (nasaApodRepository.count() == 0) {
-            getApodsForDateRange(today.minusDays(1)); // '오늘' 대신 '어제'를 전달
+
+            getApodsForDateRange(today.minusDays(2)); //이틀전 
             apodToday = nasaApodRepository.findTopByOrderByDateDesc();
-//        }
+
 
         return apodToday;
     }
