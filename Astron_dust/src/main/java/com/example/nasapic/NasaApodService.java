@@ -45,8 +45,9 @@ public class NasaApodService {
             }
         }
 
-            getApodsForDateRange(today.minusDays(1)); // '오늘' 대신 '어제'를 전달
+            getApodsForDateRange(today.minusDays(2)); //이틀전 
             apodToday = nasaApodRepository.findTopByOrderByDateDesc();
+
 
         return apodToday;
     }
@@ -86,4 +87,3 @@ public class NasaApodService {
         return nasaApodRepository.existsByDate(date);
     }
 }
-
